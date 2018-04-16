@@ -31,22 +31,22 @@
       <p class="form__promo">Заполните анкету и мы подберем программу питания для вашего кота</p>
       <fieldset class="form__section">
         <legend class="form__caption visually-hidden">Параметры кота</legend>
-        <p class="form__group">
+        <div class="form__group">
           <label class="form__label" for="name">Имя:*</label>
           <input class="form__input" type="text" id="name" name="name" placeholder="барсик" required>
-        </p>
-        <p class="form__group">
+        </div>
+        <div class="form__group">
           <label class="form__label" for="weight">вес (кг):*</label>
           <input class="form__input" type="text" id="weight" name="weight" placeholder="7" required>
-        </p>
-        <p class="form__group">
+        </div>
+        <div class="form__group">
           <label  class="form__label" for="age">возраст (лет):</label>
           <input class="form__input" type="text" id="age" name="age" placeholder="7">
-        </p>
+        </div>
       </fieldset>
       <fieldset class="form__section">
         <legend class="form__caption visually-hidden">программа</legend>
-        <input class="form__radio visually-hidden" id="lite" type="radio" name="program" tabindex="0">
+        <input class="form__radio visually-hidden" id="lite" type="radio" name="program" tabindex="0" checked>
         <label class="form__label" for="lite">Похудение</label>
         <input class="form__radio visually-hidden" id="pump" type="radio" name="program" tabindex="0">
         <label class="form__label" for="pump">Набор массы</label>
@@ -57,11 +57,11 @@
         <legend class="form__caption">Контактные данные(владельца кота)</legend>
         <p class="form__group">
           <label class="form__label" for="e-mail">возраст (лет):</label>
-          <input class="form__input" type="text" id="e-mail" name="e-mail" placeholder="kuklachev@gmail.com">
+          <input class="form__input form__input--e-mail" type="text" id="e-mail" name="e-mail" placeholder="kuklachev@gmail.com">
         </p>
         <p class="form__group">
           <label class="form__label" for="phone">возраст (лет):</label>
-          <input class="form__input" type="text" id="phone" name="phone" placeholder="8 (960) 900-60-90">
+          <input class="form__input form__input--phone" type="text" id="phone" name="phone" placeholder="8 (960) 900-60-90">
         </p>
       </fieldset>
       <fieldset class="form__section">
@@ -73,13 +73,13 @@
         </p>
       </fieldset>
       <fieldset class="form__section">
-        <input class="form__checkbox visually-hidden" id="add1" name="color" type="checkbox" tabindex="0" checked>
+        <input class="form__checkbox visually-hidden" id="add1" name="add" type="checkbox" tabindex="0" checked>
         <label class="form__label" for="add1">Сахарозаенитель</label>
-        <input class="form__checkbox visually-hidden" id="add2" name="color" type="checkbox"  tabindex="0">
+        <input class="form__checkbox visually-hidden" id="add2" name="add" type="checkbox"  tabindex="0">
         <label class="form__label" for="add2">Питьевая вода</label>
-        <input class="form__checkbox visually-hidden" id="add3" name="color" type="checkbox" tabindex="0">
+        <input class="form__checkbox visually-hidden" id="add3" name="add" type="checkbox" tabindex="0">
         <label class="form__label" for="add3">Молоко</label>
-        <input class="form__checkbox visually-hidden" id="add4" name="color" type="checkbox" tabindex="0">
+        <input class="form__checkbox visually-hidden" id="add4" name="add" type="checkbox" tabindex="0">
         <label class="form__label" for="add4">Витамины</label>
       </fieldset>
       <button class="form__submit button">отправить заявку</button>
@@ -88,7 +88,7 @@
   </section>
   <section class="page-main__section contacts">
     <h2 class="contacts__title visually-hidden">Контакты</h2>
-    <div class="contacts__promo">
+    <div class="contacts__promo contacts__promo--gray">
       <p class="contacts__text">Приглашаем к сотрудничеству дилеров!</p>
       <p class="contacts__address">ул. Большая Конюшенная, д. 19/8
         Санкт-Петербург</p>
