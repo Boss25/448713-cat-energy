@@ -63,28 +63,27 @@
     <p class="example__promo">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
       Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в
       день. </p>
-    <table class="example__table parameters">
-      <tbody>
-      <tr>
-        <td class="parameters__value">5 кг</td>
-        <td class="parameters__value">60 дней</td>
-      </tr>
-      <tr>
-        <td class="parameters__property">снижение веса</td>
-        <td class="parameters__property">затрачено дней</td>
-      </tr>
-      </tbody>
-    </table>
-    <p class="example__total">Затраты на питание:<span class="example__total-value">15 000руб.</span><p>
+    <div class="example__table parameters">
+      <div class="parameters__group">
+        <p class="parameters__value">5 кг</p>
+        <p class="parameters__property">снижение веса</p>
+      </div>
+      <div class="parameters__group">
+        <p class="parameters__value">60 дней</p>
+        <p class="parameters__property">затрачено времени</p>
+      </div>
+    </div>
+    <p class="example__total">Затраты на питание: 15 000 руб.<p>
     <div class="example__slider slider">
-      <img class="slider__image" src="http://via.placeholder.com/280x270" alt="толстый кот">
-      <img class="slider__image slider__image--second" src="http://via.placeholder.com/280x270" alt="толстый кот">
+      <img class="slider__image" src="img/before-mobile@1x.png" alt="толстый кот">
+      <img class="slider__image slider__image--second" src="img/after-mobile@1x.png" alt="толстый кот">
       <div class="slider__control control">
-        <label class="slider__border" for="before">было</label>
-        <input class="slider__radio slider__radio--before" type="radio" name="slide" id="before">
+        <input class="slider__radio slider__radio--before visually-hidden" type="radio" name="slide" id="before" checked>
+        <label class="slider__border slider__border--before" for="before">было</label>
+
         <span class="slider__handler invisible" tabindex="0">&bull;</span>
-        <label class="slider__border" for="after">стало</label>
-        <input class="slider__radio slider__radio--after" type="radio" name="slide" id="after">
+        <input class="slider__radio slider__radio--after visually-hidden" type="radio" name="slide" id="after">
+        <label class="slider__border  slider__border--after" for="after">стало</label>
       </div>
     </div>
   </section>
