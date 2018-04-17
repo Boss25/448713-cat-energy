@@ -27,8 +27,12 @@
 }
 
 .page-header__caption {
+  padding-top: 27px;
   min-height: 440px;
+  box-sizing: border-box;
   background: linear-gradient(to bottom, #68b738 305px, #ffffff 305px, #ffffff 100%);
+  background-image: url(../img/index-background-mobile@1x.jpg);
+  background-repeat: no-repeat;
 }
 
 .page-header__title {
@@ -36,6 +40,7 @@
 
   @include font-param(36px, 36px, 400, #ffffff);
   margin: 0;
+  margin-bottom: 25px;
   text-decoration: none;
   text-align: center;
 }
@@ -44,13 +49,21 @@
   font-family: "Oswald", sans-serif;
 
   @include font-param(14px, 14px, 400, #ffffff);
+  margin: 0;
+  margin-bottom: 28px;
   text-decoration: none;
   text-transform: uppercase;
+  text-align: center;
+}
+
+.page-header__image {
+  display: block;
+  margin: 0 auto;
 }
 
 .page-header__link {
-  width: 280px;
-  margin: 0 auto;
+  margin: 0 20px;
+  margin-bottom: 22px;
 }
 
 
