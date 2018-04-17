@@ -1,0 +1,6 @@
+.page-footer__dev {
+  font-family: "Arial", sans-serif;
+
+  @include font-param(16px, 16px, 400, #444444);
+  text-decoration: none;
+}

@@ -1,0 +1,28 @@
+.categories__list {
+  @include list-default;
+}
+
+.categories__item {
+  background-color: #f2f2f2;
+}
+
+.categories__title {
+  font-family: "Oswald", sans-serif;
+
+  @include font-param(24px, 37px, 400, #111111);
+  text-transform: uppercase;
+}
+
+.categories__promo {
+  font-family: "Arial", sans-serif;
+
+  @include font-param(14px, 18px, 400, #444444);
+}
+
+.categories__link {
+  font-family: "Oswald", sans-serif;
+
+  @include font-param(16px, 16px, 400, #111111);
+  text-transform: uppercase;
+  text-decoration: none;
+}

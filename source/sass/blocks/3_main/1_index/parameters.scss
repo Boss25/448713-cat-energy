@@ -1,0 +1,12 @@
+.parameters__value {
+  font-family: "Oswald", sans-serif;
+
+  @include font-param(24px, 24px, 400, #111111);
+  text-transform: uppercase;
+}
+
+.parameters__property {
+  font-family: "Arial", sans-serif;
+
+  @include font-param(12px, 12px, 400, #444444);
+}

@@ -1,0 +1,15 @@
+.main-nav__list {
+  @include list-default;
+}
+
+.main-nav__link {
+  font-family: "Oswald", sans-serif;
+
+  @include font-param(20px, 20px, 500, #111111);
+  display: block;
+  padding: 22px 0 23px 0;
+  border-bottom: 1px solid #e6e6e6;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+}

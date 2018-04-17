@@ -1,0 +1,56 @@
+@import "main-nav";
+
+.page-header {
+  min-width: 320px;
+  min-height: 65px;
+}
+
+.page-header__wrapper {
+  position: relative;
+  width: 100%;
+  min-height: 65px;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.page-header__burger {
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: 24px;
+  height: 2px;
+  box-sizing: content-box;
+  background-color: #222222;
+  border: none;
+  border-top: 6px solid #ffffff;
+  border-bottom: 6px solid #ffffff;
+  box-shadow: 0 -2px 0 #222222, 0 2px 0 #222222;
+}
+
+.page-header__caption {
+  min-height: 440px;
+  background: linear-gradient(to bottom, #68b738 305px, #ffffff 305px, #ffffff 100%);
+}
+
+.page-header__title {
+  font-family: "Oswald", sans-serif;
+
+  @include font-param(36px, 36px, 400, #ffffff);
+  margin: 0;
+  text-decoration: none;
+  text-align: center;
+}
+
+.page-header__promo {
+  font-family: "Oswald", sans-serif;
+
+  @include font-param(14px, 14px, 400, #ffffff);
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.page-header__link {
+  width: 280px;
+  margin: 0 auto;
+}
+
+

@@ -1,0 +1,24 @@
+.additional__list {
+  list-style: none;
+}
+
+.additional__name {
+  font-family: "Oswald", "Arial Narrow", sans-serif;
+
+  @include font-param(16px, 16px, 400, #111111);
+  text-transform: uppercase;
+}
+
+.additional__amount,
+.additional__cost {
+  font-family: "Arial", sans-serif;
+
+  @include font-param(14px, 14px, 400, #444444);
+}
+
+.additional__promo {
+  font-family: "Arial", sans-serif;
+
+  @include font-param(16px, 20px, 400, #ffffff);
+}
+
