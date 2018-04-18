@@ -1,12 +1,18 @@
 .button {
   font-family: "Oswald", sans-serif;
 
-  @include font-param(14px, 18px, 400, #ffffff);
+  @include font-param(16px, 20px, 400, #ffffff);
   display: block;
-  padding: 11px 0;
+  padding: 10px 0;
   background-color: #68b738;
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
   border: none;
+
+  &--header {
+    font-size: 14px;
+    line-height: 18px;
+    padding: 11px 0;
+  }
 }

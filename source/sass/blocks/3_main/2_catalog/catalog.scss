@@ -1,6 +1,18 @@
-@import "card";
-@import "additional";
-
 .catalog__list {
-  list-style: none;
+  @include list-default;
+}
+
+.catalog__promo {
+  font-family: "Arial", sans-serif;
+
+  @include font-param(16px, 20px, 400, #ffffff);
+  display: block;
+  min-height: 290px;
+  margin: 0;
+  padding: 0 55px;
+  padding-top: 188px;
+  box-sizing: border-box;
+  text-align: center;
+  background-image: url(../img/gift-photo-mobile@1x.jpg);
+  background-repeat: no-repeat;
 }

@@ -1,4 +1,6 @@
 .page-footer {
+  padding: 0 20px;
+  padding-bottom: 32px;
   background-color: #f2f2f2;
 }
 
@@ -7,7 +9,7 @@
   width: 128px;
   height: 24px;
   margin: 0 auto;
-  margin-bottom: 32px;
+  margin-bottom: 31px;
   padding-top: 40px;
   cursor: pointer;
 }
@@ -17,4 +19,7 @@
 
   @include font-param(16px, 16px, 400, #444444);
   text-decoration: none;
+  display: block;
+  padding-top: 29px;
+  border-top: 1px solid #d9d9d9;
 }
