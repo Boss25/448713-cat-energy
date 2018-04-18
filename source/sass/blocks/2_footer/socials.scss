@@ -1,0 +1,29 @@
+.socials {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  border-top: 1px solid #d9d9d9;
+
+  @include list-default;
+  padding-top: 24px;
+}
+
+.socials__link {
+  display: block;
+  background-color: #cd0000;
+
+  &--vk {
+    width: 22px;
+    height: 12px;
+  }
+
+  &--instagram {
+    width: 16px;
+    height: 16px;
+  }
+
+  &--facebook {
+    width: 10px;
+    height: 19px;
+  }
+}
