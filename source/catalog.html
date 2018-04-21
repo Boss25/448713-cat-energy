@@ -2,6 +2,7 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy: Кэт энерджи Каталог</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -41,11 +42,11 @@
               <td class="card__value">500 г</td>
             </tr>
             <tr>
-              <td class="card__value">Вкус</td>
+              <td class="card__property">Вкус</td>
               <td class="card__value">Курица</td>
             </tr>
             <tr>
-              <td class="card__value">Цена</td>
+              <td class="card__property">Цена</td>
               <td class="card__value">700 Р.</td>
             </tr>
             </tbody>
@@ -64,11 +65,11 @@
               <td class="card__value">1000 г</td>
             </tr>
             <tr>
-              <td class="card__value">Вкус</td>
+              <td class="card__property">Вкус</td>
               <td class="card__value">Курица</td>
             </tr>
             <tr>
-              <td class="card__value">Цена</td>
+              <td class="card__property">Цена</td>
               <td class="card__value">1000 Р.</td>
             </tr>
             </tbody>
@@ -87,11 +88,11 @@
               <td class="card__value">500 г</td>
             </tr>
             <tr>
-              <td class="card__value">Вкус</td>
+              <td class="card__property">Вкус</td>
               <td class="card__value">Рыба</td>
             </tr>
             <tr>
-              <td class="card__value">Цена</td>
+              <td class="card__property">Цена</td>
               <td class="card__value">700 Р.</td>
             </tr>
             </tbody>
@@ -110,11 +111,11 @@
               <td class="card__value">1000 г</td>
             </tr>
             <tr>
-              <td class="card__value">Вкус</td>
+              <td class="card__property">Вкус</td>
               <td class="card__value">Рыба</td>
             </tr>
             <tr>
-              <td class="card__value">Цена</td>
+              <td class="card__property">Цена</td>
               <td class="card__value">1000 Р.</td>
             </tr>
             </tbody>
@@ -133,11 +134,11 @@
               <td class="card__value">1000 г</td>
             </tr>
             <tr>
-              <td class="card__value">Вкус</td>
+              <td class="card__property">Вкус</td>
               <td class="card__value">Гречка</td>
             </tr>
             <tr>
-              <td class="card__value">Цена</td>
+              <td class="card__property">Цена</td>
               <td class="card__value">400 Р.</td>
             </tr>
             </tbody>
@@ -156,11 +157,11 @@
               <td class="card__value">1000 г</td>
             </tr>
             <tr>
-              <td class="card__value">Вкус</td>
+              <td class="card__property">Вкус</td>
               <td class="card__value">Гречка</td>
             </tr>
             <tr>
-              <td class="card__value">Цена</td>
+              <td class="card__property">Цена</td>
               <td class="card__value">700 Р.</td>
             </tr>
             </tbody>
@@ -179,11 +180,11 @@
               <td class="card__value">500 г</td>
             </tr>
             <tr>
-              <td class="card__value">Вкус</td>
+              <td class="card__property">Вкус</td>
               <td class="card__value">Рис</td>
             </tr>
             <tr>
-              <td class="card__value">Цена</td>
+              <td class="card__property">Цена</td>
               <td class="card__value">500 Р.</td>
             </tr>
             </tbody>
@@ -191,8 +192,8 @@
         </div>
         <a href="#" class="card__action button">Заказать</a>
       </li>
-      <li class="catalog__item card card--show-more">
-        <h3 class="card__name">Показать еще 100500 товаров</h3>
+      <li class="catalog__item card">
+        <h3 class="card__name card__name--add">Показать еще 100500 товаров</h3>
         <p class="card__promo">На самом деле вкусов гораздо больше!</p>
         <a href="#" class="card__action button button--gray">Показать все</a>
       </li>
@@ -201,7 +202,7 @@
   <section class="page-main__section catalog">
     <h2 class="catalog__title">Дополнительные товары</h2>
     <ul class="catalog__list">
-      <li class="catalog__item card">
+      <li class="catalog__item card card--additional">
         <div class="card__description">
           <h3 class="card__name">Сахарозаменитель</h3>
           <table class="card__attributes">
@@ -215,7 +216,7 @@
         </div>
         <a href="#" class="card__action button">Заказать</a>
       </li>
-      <li class="catalog__item card">
+      <li class="catalog__item card card--additional">
         <div class="card__description">
           <h3 class="card__name">Питьевая вода</h3>
           <table class="card__attributes">
@@ -229,7 +230,7 @@
         </div>
         <a href="#" class="card__action button">Заказать</a>
       </li>
-      <li class="catalog__item card">
+      <li class="catalog__item card card--additional">
         <div class="card__description">
           <h3 class="card__name">Молоко</h3>
           <table class="card__attributes">

@@ -1,5 +1,18 @@
+.catalog {
+  margin: 0;
+  margin-bottom: 18px;
+}
+
 .catalog__list {
   @include list-default;
+}
+
+.catalog__title {
+  @include green-line-title;
+  margin: 0;
+  margin-bottom: 24px;
+  padding: 10px 20px;
+
 }
 
 .catalog__promo {
