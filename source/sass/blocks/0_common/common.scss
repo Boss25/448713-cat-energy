@@ -1,0 +1,50 @@
+
+@font-face {
+  font-family: "Oswald";
+  src: url("../fonts/oswaldregular.woff2") format("woff2"), url("../fonts/oswaldregular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Oswald";
+  src: url("../fonts/oswaldmedium.woff2") format("woff2"), url("../fonts/oswaldmedium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@mixin font-param($size, $height, $weight, $color) {
+  font-size: $size;
+  line-height: $height;
+  font-weight: $weight;
+  color: $color;
+}
+
+@mixin list-default {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin green-line-title {
+  font-family: "Oswald", "Arial Narrow", sans-serif;
+
+  @include font-param(24px, 24px, 400, #444444);
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    display: block;
+    width: 53px;
+    height: 3px;
+    background-color: #68b738;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}

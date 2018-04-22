@@ -1,0 +1,80 @@
+.slider__control {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.slider__border {
+  font-family: "Oswald", sans-serif;
+
+  @include font-param(16px, 20px, 400, #111111);
+  display: block;
+  width: 97px;
+  position: relative;
+  box-sizing: border-box;
+  text-transform: uppercase;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 3px;
+    display: block;
+    width: 42px;
+    height: 14px;
+    background-color: #ffffff;
+    border: 1px solid #cdcdcd;
+    box-sizing: border-box;
+  }
+
+  &--before {
+    padding-right: 60px;
+
+    &::before {
+      right: 0;
+      border-right: none;
+      border-radius: 6px 0 0 6px;
+    }
+  }
+
+  &--after {
+    padding-left: 60px;
+
+    &::before {
+      left: 0;
+      border-left: none;
+      border-radius: 0 6px 6px 0;
+    }
+  }
+}
+
+.slider__image {
+  position: relative;
+  left: -20px;
+  display: block;
+  margin-bottom: 32px;
+
+  &--second {
+    display: none;
+  }
+}
+
+.slider__radio:checked + .slider__border {
+  &::after {
+    content: "";
+    position: absolute;
+    top: 7px;
+    display: block;
+    width: 35px;
+    height: 6px;
+    background-color: #68b738;
+    border-radius: 3px;
+  }
+
+  &--before::after {
+    right: 0;
+  }
+
+  &--after::after {
+    left: 0;
+  }
+}

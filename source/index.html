@@ -2,14 +2,17 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <header class="page-header page-header--index">
-  <a href="index.html" class="page-header__logo">Cat Energy</a>
+  <div class="page-header__wrapper">
+    <a href="index.html" class="page-header__logo invisible">Cat Energy</a>
+    <button class="page-header__burger invisible">Меню</button>
+  </div>
   <nav class="main-nav">
-    <button class="main-nav__burger">Кнопка меню</button>
     <ul class="main-nav__list">
       <li class="main-nav__item">
         <a class="main-nav__link">Главная</a>
@@ -22,14 +25,16 @@
       </li>
     </ul>
   </nav>
-  <h1 class="page-header__title">Функциональное питание для котов</h1>
-  <p class="page-header__promo">Занялся собой? Займись котом?</p>
-  <img class="page-header__image" src="http://via.placeholder.com/280x270" alt="Cat Energy курица">
-  <a class="page-header__link button" href="#">Подобрать программу</a>
+  <div class="page-header__caption">
+    <h1 class="page-header__title">Функциональное питание для котов</h1>
+    <p class="page-header__promo">Занялся собой? Займись котом!</p>
+    <img class="page-header__image" src="img/index-can-mobile@1x.png" alt="Cat Energy курица">
+  </div>
+  <a class="page-header__link button button--header" href="#">Подобрать программу</a>
 </header>
 <main class="page-main">
   <section class="page-main__section categories">
-    <h2 class="categories__title">Категории</h2>
+    <h2 class="categories__title visually-hidden">Категории</h2>
     <ul class="categories__list">
       <li class="categories__item">
         <h3 class="categories__title categories__title--slim">Похудение</h3>
@@ -59,52 +64,52 @@
     <p class="example__promo">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
       Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в
       день. </p>
-    <table class="example__table parameters">
-      <tbody>
-      <tr>
-        <td class="parameters__value">5 кг</td>
-        <td class="parameters__value">60 дней</td>
-      </tr>
-      <tr>
-        <td class="parameters__property">снижение веса</td>
-        <td class="parameters__property">затрачено дней</td>
-      </tr>
-      </tbody>
-    </table>
-    <p class="example__total">Затраты на питание:<span class="example__total-value">15 000руб.</span><p>
+    <div class="example__table parameters">
+      <div class="parameters__group">
+        <p class="parameters__value">5 кг</p>
+        <p class="parameters__property">снижение веса</p>
+      </div>
+      <div class="parameters__group">
+        <p class="parameters__value">60 дней</p>
+        <p class="parameters__property">затрачено времени</p>
+      </div>
+    </div>
+    <p class="example__total">Затраты на питание: 15 000 руб.<p>
     <div class="example__slider slider">
-      <img class="slider__image" src="http://via.placeholder.com/280x270" alt="толстый кот">
-      <img class="slider__image slider__image--second" src="http://via.placeholder.com/280x270" alt="толстый кот">
+      <img class="slider__image" src="img/before-mobile@1x.png" alt="толстый кот">
+      <img class="slider__image slider__image--second" src="img/after-mobile@1x.png" alt="толстый кот">
       <div class="slider__control control">
-        <label class="slider__border" for="before">было</label>
-        <input class="slider__radio slider__radio--before" type="radio" name="slide" id="before">
+        <input class="slider__radio slider__radio--before visually-hidden" type="radio" name="slide" id="before" checked>
+        <label class="slider__border slider__border--before" for="before">было</label>
         <span class="slider__handler invisible" tabindex="0">&bull;</span>
-        <label class="slider__border" for="after">стало</label>
-        <input class="slider__radio slider__radio--after" type="radio" name="slide" id="after">
+        <input class="slider__radio slider__radio--after visually-hidden" type="radio" name="slide" id="after">
+        <label class="slider__border  slider__border--after" for="after">стало</label>
       </div>
     </div>
   </section>
   <section class="page-main__section contacts">
     <h2 class="contacts__title visually-hidden">Контакты</h2>
     <div class="contacts__promo">
-      <p class="contacts__text">Приглашаем к сотрудничеству дилеров!</p>
+      <p class="contacts__text">Приглашаем<br>к сотрудничеству дилеров!</p>
       <p class="contacts__address">ул. Большая Конюшенная, д. 19/8
         Санкт-Петербург</p>
     </div>
-    <a class="contacts__map" href="#"><img src="http://via.placeholder.com/280x270" alt="Карта"></a>
+    <a class="contacts__map" href="#"><img src="img/bg-map-mobile@1x.png" width="100%" height=400 alt="Карта"></a>
   </section>
 </main>
 <footer class="page-footer">
-  <a class="page-footer__logo">Cat Energy</a>
+  <a href="form.html" class="page-footer__logo invisible">
+    <object type="image/svg+xml" data="img/logo-footer.svg" class="logo">
+  </object>Cat Energy</a>
   <ul class="page-footer__links socials">
     <li class="socials__item">
-      <a href="https://www.facebook.com/" class="socials__link socials__link--facebook invisible">facebook</a>
+      <a href="https://www.facebook.com/" class="socials__link socials__link--vk invisible">vkontakte</a>
     </li>
     <li class="socials__item">
       <a href="https://www.instagram.com/" class="socials__link socials__link--instagram invisible">instagram</a>
     </li>
     <li class="socials__item">
-      <a href="https://twitter.com/" class="socials__link socials__link--twitter invisible">twitter</a>
+      <a href="https://twitter.com/" class="socials__link socials__link--facebook invisible">facebook</a>
     </li>
   </ul>
   <a class="page-footer__dev" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>

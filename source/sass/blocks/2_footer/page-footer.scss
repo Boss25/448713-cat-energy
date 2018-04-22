@@ -1,0 +1,25 @@
+.page-footer {
+  padding: 0 20px;
+  padding-bottom: 32px;
+  background-color: #f2f2f2;
+}
+
+.page-footer__logo {
+  display: block;
+  width: 128px;
+  height: 24px;
+  margin: 0 auto;
+  margin-bottom: 31px;
+  padding-top: 39px;
+  cursor: pointer;
+}
+
+.page-footer__dev {
+  font-family: "Arial", sans-serif;
+
+  @include font-param(16px, 16px, 400, #444444);
+  text-decoration: none;
+  display: block;
+  padding-top: 30px;
+  border-top: 1px solid #d9d9d9;
+}
