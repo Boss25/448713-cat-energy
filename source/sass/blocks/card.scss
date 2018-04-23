@@ -13,7 +13,7 @@
     width: 280px;
     margin: 0 auto;
     padding: 0;
-    padding-bottom: 20px;
+    padding-bottom: 17px;
     border: none;
     border-bottom: 1px solid #cdcdcd;
 
@@ -25,13 +25,17 @@
 
 .card__description {
   width: calc(100% - 140px);
+  margin-bottom: 14px;
   padding-top: 21px;
 }
 
 .card__name {
-  font-family: "Oswald", "Arial Narrow", sans-serif;
+  font-family: $family-oswald;
 
-  @include font-param(16px, 20px, 400, #111111);
+  font-size: $mobile-common-uppercase;
+  line-height: 20px;
+  font-weight: 400;
+  color: $title-color;
   text-transform: uppercase;
   width: 80px;
   margin: 0;
@@ -52,21 +56,26 @@
 
 .card__property,
 .card__value {
-  font-family: "Arial", sans-serif;
+  font-family: $family-arial;
 
-  @include font-param(12px, 16px, 400, #444444);
+  font-size: $mobile-table-text;
+  line-height: 16px;
+  font-weight: 400;
+  color: $text-color;
   padding: 0;
 }
-
 
 .card__value {
   text-align: right;
 }
 
 .card__promo {
-  font-family: "Arial", sans-serif;
+  font-family: $family-arial;
 
-  @include font-param(12px, 16px, 400, #444444);
+  font-size: $mobile-promo-text;
+  line-height: 16px;
+  font-weight: 400;
+  color: $text-color;
   width: 100%;
   margin: 0;
   margin-bottom: 21px;
@@ -83,5 +92,14 @@
 }
 
 .card--additional .card__description {
-  padding-top: 12px;
+  padding-top: 11px;
+}
+
+.card--additional .card__name {
+  margin-bottom: 10px;
+}
+
+.card--additional .card__property,
+.card--additional .card__value {
+  font-size: $mobile-text;
 }

@@ -20,16 +20,22 @@
 }
 
 .contacts__text {
-  font-family: "Oswald", sans-serif;
+  font-family: $family-oswald;
 
-  @include font-param(16px, 20px, 400, #111111);
+  font-size: $mobile-common-uppercase;
+  line-height: 20px;
+  font-weight: 400;
+  color: $title-color;
   text-transform: uppercase;
 }
 
 .contacts__address {
-  font-family: "Arial", sans-serif;
+  font-family: $family-arial;
 
-  @include font-param(14px, 20px, 400, #444444);
+  font-size: $mobile-text;
+  line-height: 20px;
+  font-weight: 400;
+  color: $text-color;
 }
 
 .contacts__map {

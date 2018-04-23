@@ -5,9 +5,12 @@
 }
 
 .slider__border {
-  font-family: "Oswald", sans-serif;
+  font-family: $family-oswald;
 
-  @include font-param(16px, 20px, 400, #111111);
+  font-size: $mobile-common-uppercase;
+  line-height: 20px;
+  font-weight: 400;
+  color: $title-color;
   display: block;
   width: 97px;
   position: relative;

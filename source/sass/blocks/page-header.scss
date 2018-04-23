@@ -33,16 +33,20 @@
 }
 
 .page-header__title {
-  font-family: "Oswald", sans-serif;
+  font-family: $family-oswald;
 
-  @include font-param(36px, 36px, 400, #ffffff);
+  font-size: $mobile-caption;
+  line-height: 36px;
+  font-weight: 400;
+  color: #ffffff;
   margin: 0;
   padding-bottom: 25px;
   text-decoration: none;
   text-align: center;
 
   &--black {
-    @include font-param(36px, 60px, 400, #111111);
+    line-height: 60px;
+    color: $title-color;
     padding-top: 15px;
     padding-left: 20px;
     padding-bottom: 28px;
@@ -51,9 +55,12 @@
 }
 
 .page-header__promo {
-  font-family: "Oswald", sans-serif;
+  font-family: $family-oswald;
 
-  @include font-param(14px, 14px, 400, #ffffff);
+  font-size: $mobile-text;
+  line-height: 14px;
+  font-weight: 400;
+  color: #ffffff;
   margin: 0;
   margin-bottom: 28px;
   text-decoration: none;

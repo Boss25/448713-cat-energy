@@ -1,0 +1,52 @@
+.form__promo {
+  font-family: $family-oswald;
+
+  font-size: $mobile-text;
+  line-height: 18px;
+  font-weight: 400;
+  color: $title-color;
+  text-transform: uppercase;
+}
+
+.form__section {
+  border: none;
+}
+
+.form__caption {
+  font-family: $family-oswald;
+
+  font-size: $mobile-title;
+  line-height: 24px;
+  font-weight: 400;
+  color: $title-color;
+}
+
+.form__label {
+  font-family: $family-oswald;
+
+  font-size: $mobile-common-uppercase;
+  line-height: 18px;
+  font-weight: 400;
+  color: $title-color;
+  text-transform: uppercase;
+}
+
+.form__input,
+.form__text {
+  font-family: $family-oswald;
+
+  font-size: $mobile-common-uppercase;
+  line-height: 18px;
+  font-weight: 400;
+  color: $text-color;
+  text-transform: uppercase;
+}
+
+.form__note {
+  font-family: $family-arial;
+
+  font-size: $mobile-text;
+  line-height: 16px;
+  font-weight: 400;
+  color: $text-color;
+}

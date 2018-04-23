@@ -7,9 +7,12 @@
 }
 
 .parameters__value {
-  font-family: "Oswald", sans-serif;
+  font-family: $family-oswald;
 
-  @include font-param(24px, 24px, 400, #111111);
+  font-size: $mobile-title;
+  line-height: 24px;
+  font-weight: 400;
+  color: $title-color;
   width: 122px;
   margin: 0;
   padding: 12px 0 18px 0;
@@ -20,9 +23,12 @@
 }
 
 .parameters__property {
-  font-family: "Arial", sans-serif;
+  font-family: $family-arial;
 
-  @include font-param(12px, 12px, 400, #444444);
+  font-size: $mobile-table-text;
+  line-height: 12px;
+  font-weight: 400;
+  color: $text-color;
   position: absolute;
   left: calc((100% - 86px) / 2);
   bottom: -15px;

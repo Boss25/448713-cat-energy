@@ -13,9 +13,12 @@
 }
 
 .categories__title {
-  font-family: "Oswald", sans-serif;
+  font-family: $family-oswald;
 
-  @include font-param(24px, 37px, 400, #111111);
+  font-size: $mobile-title;
+  line-height: 37px;
+  font-weight: 400;
+  color: $title-color;
   margin: 0;
   margin-bottom: 22px;
   padding: 8px 0;
@@ -24,16 +27,22 @@
 }
 
 .categories__promo {
-  font-family: "Arial", sans-serif;
+  font-family: $family-arial;
 
-  @include font-param(14px, 18px, 400, #444444);
+  font-size: $mobile-text;
+  line-height: 18px;
+  font-weight: 400;
+  color: $text-color;
   margin-bottom: 22px;
 }
 
 .categories__link {
-  font-family: "Oswald", sans-serif;
+  font-family: $family-oswald;
 
-  @include font-param(16px, 16px, 400, #111111);
+  font-size: $mobile-common-uppercase;
+  line-height: 16px;
+  font-weight: 400;
+  color: $title-color;
   display: block;
   padding-top: 18px;
   border-top: 1px solid #d9d9d9;

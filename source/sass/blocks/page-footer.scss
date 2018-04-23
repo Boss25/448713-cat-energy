@@ -15,9 +15,12 @@
 }
 
 .page-footer__dev {
-  font-family: "Arial", sans-serif;
+  font-family: $family-arial;
 
-  @include font-param(16px, 16px, 400, #444444);
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  color: $text-color;
   text-decoration: none;
   display: block;
   padding-top: 30px;

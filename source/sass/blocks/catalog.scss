@@ -15,16 +15,21 @@
 }
 
 .catalog__promo {
-  font-family: "Arial", sans-serif;
+  font-family: $family-arial;
 
-  @include font-param(16px, 20px, 400, #ffffff);
+  font-size: $mobile-common-uppercase;
+  line-height: 20px;
+  font-weight: 400;
+  color: #ffffff;
   display: block;
   min-height: 290px;
-  margin: 0;
-  padding: 0 55px;
-  padding-top: 188px;
+  margin-top: 39px;
+  margin-bottom: 34px;
+  padding: 0 65px;
+  padding-top: 186px;
   box-sizing: border-box;
   text-align: center;
   background-image: url("../img/gift-photo-mobile@1x.jpg");
+  background-position: top center;
   background-repeat: no-repeat;
 }

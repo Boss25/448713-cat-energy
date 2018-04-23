@@ -3,9 +3,12 @@
 }
 
 .main-nav__link {
-  font-family: "Oswald", sans-serif;
+  font-family: $family-oswald;
 
-  @include font-param(20px, 20px, 500, #111111);
+  font-size: $mobile-menu;
+  line-height: 20px;
+  font-weight: 500;
+  color: $title-color;
   display: block;
   padding: 22px 0 23px 0;
   border-bottom: 1px solid #e6e6e6;

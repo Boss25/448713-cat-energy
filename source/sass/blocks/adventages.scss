@@ -1,7 +1,10 @@
 .advantages__title {
-  font-family: "Oswald", sans-serif;
+  font-family: $family-oswald;
 
-  @include font-param(36px, 60px, 400, #111111);
+  font-size: $mobile-caption;
+  line-height: 60px;
+  font-weight: 400;
+  color: $title-color;
   margin: 0;
   margin-bottom: 28px;
 }
@@ -12,9 +15,12 @@
 }
 
 .advantages__item {
-  font-family: "Arial", sans-serif;
+  font-family: $family-arial;
 
-  @include font-param(14px, 18px, 400, #444444);
+  font-size: $mobile-text;
+  line-height: 18px;
+  font-weight: 400;
+  color: $text-color;
   position: relative;
   padding: 2px 0 4px 0;
   padding-left: 80px;

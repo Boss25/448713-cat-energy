@@ -1,7 +1,10 @@
 .button {
-  font-family: "Oswald", sans-serif;
+  font-family: $family-oswald;
 
-  @include font-param(16px, 20px, 400, #ffffff);
+  font-size: $mobile-common-uppercase;
+  line-height: 20px;
+  font-weight: 400;
+  color: #ffffff;
   display: block;
   padding: 10px 0;
   background-color: #68b738;
@@ -17,7 +20,7 @@
   }
 
   &--gray {
-    color: #444444;
+    color: $text-color;
     background-color: #f2f2f2;
   }
 }
