@@ -1,13 +1,12 @@
 .page-header {
   min-width: 320px;
-  min-height: 65px;
 }
 
 .page-header__wrapper {
   position: relative;
-  width: 100%;
+  margin: 0 auto;
+  max-width: 450px;
   min-height: 65px;
-  border-bottom: 1px solid #e6e6e6;
 }
 
 .page-header__burger {
@@ -26,9 +25,11 @@
 
 .page-header__caption {
   padding-top: 27px;
-  min-height: 440px;
+  min-height: 480px;
+  margin-bottom: 22px;
   box-sizing: border-box;
-  background-image: url("../img/index-background-mobile@1x.jpg");
+  background-image: url("../img/index-background-mobile@1x.jpg"), linear-gradient(to bottom, #64a83b 305px, #ffffff 305px, #ffffff 100%);
+  background-position: top center;
   background-repeat: no-repeat;
 }
 
@@ -39,7 +40,8 @@
   line-height: 36px;
   font-weight: 400;
   color: #ffffff;
-  margin: 0;
+  width: 320px;
+  margin: 0 auto;
   padding-bottom: 25px;
   text-decoration: none;
   text-align: center;
@@ -71,9 +73,5 @@
 .page-header__image {
   display: block;
   margin: 0 auto;
-}
-
-.page-header__link {
-  margin: 0 20px;
-  margin-bottom: 22px;
+  margin-bottom: 3px;
 }

@@ -1,3 +1,7 @@
+.advantages {
+  max-width: 450px;
+}
+
 .advantages__title {
   font-family: $family-oswald;
 
@@ -22,8 +26,10 @@
   font-weight: 400;
   color: $text-color;
   position: relative;
+  min-height: 60px;
   padding: 2px 0 4px 0;
   padding-left: 80px;
+  box-sizing: border-box;
 
   &:not(:last-child) {
     margin-bottom: 20px;

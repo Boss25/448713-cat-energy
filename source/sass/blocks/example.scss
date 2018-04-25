@@ -1,9 +1,15 @@
 .example {
+  width: 100%;
   margin: 0;
-  padding: 0 20px;
   padding-top: 17px;
   padding-bottom: 36px;
   background-color: #f2f2f2;
+}
+
+.example__wrapper {
+  margin: 0 auto;
+  padding: 0 20px;
+  max-width: 450px;
 }
 
 .example__title {

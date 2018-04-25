@@ -6,10 +6,37 @@
   font-weight: 400;
   color: $title-color;
   text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 23px;
+  padding-right: 10px;
 }
 
 .form__section {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  padding-top: 13px;
   border: none;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.form__group {
+  display: flex;
+  align-items: baseline;
+  min-width: 100%;
+}
+
+.form__input {
+  flex-grow: 1;
+  min-width: 140px;
+  margin-bottom: 14px;
+  padding-top: 12px;
+  padding-bottom: 13px;
+  padding-left: 15px;
+  padding-right: 20px;
+  box-sizing: border-box;
+  border: 1px solid #e6e6e6;
 }
 
 .form__caption {
@@ -29,6 +56,18 @@
   font-weight: 400;
   color: $title-color;
   text-transform: uppercase;
+  padding-right: 13px;
+  flex-shrink: 0;
+  box-sizing: border-box;
+
+  &[for=weight] {
+    padding-right: 16px;
+  }
+
+  &[for=age] {
+    width: 108px;
+  }
+
 }
 
 .form__input,
