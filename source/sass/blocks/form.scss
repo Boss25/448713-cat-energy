@@ -101,11 +101,11 @@
   flex-shrink: 0;
   box-sizing: border-box;
 
-  &[for=weight] {
+  &[for="weight"] {
     padding-right: 16px;
   }
 
-  &[for=age] {
+  &[for="age"] {
     width: 108px;
   }
 }
