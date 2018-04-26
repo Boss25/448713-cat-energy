@@ -6,7 +6,6 @@
 
 .slider__border {
   font-family: $family-oswald;
-
   font-size: $mobile-common-uppercase;
   line-height: 20px;
   font-weight: 400;
@@ -56,7 +55,7 @@
   display: block;
   margin: 0 auto;
   margin-bottom: 32px;
-/*  text-align: center;*/
+  /*  text-align: center;*/
 
   &--second {
     display: none;

@@ -28,7 +28,7 @@
   <h1 class="page-header__title page-header__title--black">Подбор программы</h1>
 </header>
 <main class="page-main">
-  <section class="page-main__section">
+  <section class="page-main__section page-main__section--wide">
     <h2 class="page-main__title visually-hidden">Форма анкеты</h2>
     <form class="page-main__form form" action="https://echo.htmlacademy.ru" method="post">
       <p class="form__promo">Заполните анкету и мы подберем программу питания для вашего кота</p>
@@ -47,7 +47,7 @@
           <input class="form__input" type="text" id="age" name="age" placeholder="7">
         </div>
       </div>
-      <div class="form__section">
+      <div class="form__section form__section--border">
         <legend class="form__caption visually-hidden">программа</legend>
         <input class="form__radio visually-hidden" id="lite" type="radio" name="program" tabindex="0" checked>
         <label class="form__label" for="lite">Похудение</label>
@@ -57,22 +57,17 @@
         <label class="form__label" for="undefined">Не знаю (нужен ваш совет)</label>
       </div>
       <fieldset class="form__section">
-        <legend class="form__caption">Контактные данные(владельца кота)</legend>
-        <p class="form__group">
-          <label class="form__label" for="e-mail">возраст (лет):</label>
+        <p class="form__caption">Контактные данные (владельца кота)</p>
+        <div class="form__group">
+          <label class="form__label" for="e-mail">E-mail:*</label>
           <input class="form__input form__input--e-mail" type="text" id="e-mail" name="e-mail" placeholder="kuklachev@gmail.com">
-        </p>
-        <p class="form__group">
-          <label class="form__label" for="phone">возраст (лет):</label>
+        </div>
+        <div class="form__group">
+          <label class="form__label" for="phone">Телефон:*</label>
           <input class="form__input form__input--phone" type="text" id="phone" name="phone" placeholder="8 (960) 900-60-90">
-        </p>
-      </fieldset>
-      <fieldset class="form__section">
-        <legend class="form__caption">Комментарий</legend>
-        <p class="form__group">
-          <label class="form__label" for="comment">Расскажите обо всех повадках кота</label>
+        </div>
+          <label class="form__caption" for="comment">Комментарий</label>
           <textarea class="form__text" id="comment" name="comment"  cols="30" rows="5" placeholder="Расскажите обо всех повадках кота" ></textarea>
-        </p>
       </fieldset>
       <fieldset class="form__section">
         <input class="form__checkbox visually-hidden" id="add1" name="add" type="checkbox" tabindex="0" checked>

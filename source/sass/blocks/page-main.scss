@@ -1,8 +1,9 @@
 .page-main__section {
   min-width: 280px;
   margin: 0 auto;
+  padding: 0 20px;
 
-  @media (max-width: 490px) {
-    margin: 0 20px;
+  &--wide {
+    padding: 0;
   }
 }

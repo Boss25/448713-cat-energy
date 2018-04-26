@@ -1,5 +1,5 @@
 .contacts {
-  margin: 0;
+  padding: 0;
 
   &--gray {
     background-color: #f2f2f2;
@@ -8,6 +8,7 @@
 
 .contacts__promo {
   display: flex;
+  justify-content: space-between;
   max-width: 450px;
   margin: 0 auto;
   padding: 0 20px;
@@ -22,24 +23,22 @@
 
 .contacts__text {
   font-family: $family-oswald;
-
   font-size: $mobile-common-uppercase;
   line-height: 20px;
   font-weight: 400;
   color: $title-color;
   text-transform: uppercase;
-  width: 180px;
-  padding-right: 20px;
+  width: 160px;
 }
 
 .contacts__address {
   font-family: $family-arial;
-
   font-size: $mobile-text;
   line-height: 20px;
   font-weight: 400;
   color: $text-color;
   width: 50%;
+  flex-shrink: 0;
 }
 
 .contacts__map {
