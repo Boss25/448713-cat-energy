@@ -1,17 +1,48 @@
 .page-header {
+  position: relative;
   min-width: 320px;
+
+  @media (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .page-header__wrapper {
   position: relative;
+  display: flex;
+  justify-content: space-between;
   margin: 0 auto;
   max-width: 450px;
-  min-height: 65px;
+  min-height: 264px;
+  padding: 0 20px;
+
+  @media (min-width: 768px) {
+    max-width: 1000px;
+    min-height: 108px;
+    padding-left: 30px;
+  }
+}
+
+.page-header__logo {
+  width: 190px;
+  height: 38px;
+  padding-top: 14px;
+  background-image: url("../img/logo-mobile.svg");
+  background-position: bottom;
+  background-repeat: no-repeat;
+
+  @media (min-width: 768px) {
+    width: 173px;
+    height: 58px;
+    background-image: url("../img/logo-tablet.png");
+  }
 }
 
 .page-header__burger {
   display: block;
   margin: 0;
+  margin-top: 10px;
   padding: 0;
   width: 24px;
   height: 2px;
@@ -21,6 +52,10 @@
   border-top: 6px solid #ffffff;
   border-bottom: 6px solid #ffffff;
   box-shadow: 0 -2px 0 #222222, 0 2px 0 #222222;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
 }
 
 .page-header__caption {
@@ -32,11 +67,15 @@
     linear-gradient(to bottom, #64a83b 305px, #ffffff 305px, #ffffff 100%);
   background-position: top center;
   background-repeat: no-repeat;
+
+  @media (min-width: 768px) {
+    width: 100%;
+  }
 }
 
 .page-header__title {
   font-family: $family-oswald;
-  font-size: $mobile-caption;
+  font-size: $caption;
   line-height: 36px;
   font-weight: 400;
   color: #ffffff;
@@ -61,7 +100,7 @@
 
 .page-header__promo {
   font-family: $family-oswald;
-  font-size: $mobile-text;
+  font-size: $text;
   line-height: 14px;
   font-weight: 400;
   color: #ffffff;

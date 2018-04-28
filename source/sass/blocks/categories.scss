@@ -18,7 +18,7 @@
 
 .categories__title {
   font-family: $family-oswald;
-  font-size: $mobile-title;
+  font-size: $title;
   line-height: 37px;
   font-weight: 400;
   color: $title-color;
@@ -32,7 +32,7 @@
 .categories__promo {
   font-family: $family-arial;
 
-  font-size: $mobile-text;
+  font-size: $text;
   line-height: 18px;
   font-weight: 400;
   color: $text-color;
@@ -42,7 +42,7 @@
 .categories__link {
   font-family: $family-oswald;
 
-  font-size: $mobile-common-uppercase;
+  font-size: $common-uppercase;
   line-height: 16px;
   font-weight: 400;
   color: $title-color;

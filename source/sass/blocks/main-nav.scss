@@ -1,14 +1,24 @@
 .main-nav {
   border-top: 1px solid #e6e6e6;
+
+  @media (min-width: 768px) {
+    margin-right: 30px;
+    border: none;
+  }
 }
 
 .main-nav__list {
   @include list-default;
+  position: absolute;
+
+  @media (min-width: 768px) {
+    display: flex;
+  }
 }
 
 .main-nav__link {
   font-family: $family-oswald;
-  font-size: $mobile-menu;
+  font-size: $menu;
   line-height: 20px;
   font-weight: 500;
   color: $title-color;
@@ -18,4 +28,8 @@
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
+
+  @media (min-width: 768px) {
+    border: none;
+  }
 }

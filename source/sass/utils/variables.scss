@@ -9,10 +9,14 @@ $title-color: #111111;
 $text-color: #444444;
 
 /*font-size*/
-$mobile-caption: 36px;
-$mobile-title: 24px;
-$mobile-menu: 20px;
-$mobile-common-uppercase: 16px;
-$mobile-text: 14px;
-$mobile-table-text: 12px;
-$mobile-promo-text: 12px;
+$caption: 36px;
+$title: 24px;
+$menu: 20px;
+$common-uppercase: 16px;
+$text: 14px;
+$table-text: 12px;
+$promo-text: 12px;
+
+@media (min-width: 768px) {
+  $menu: 18px;
+}
