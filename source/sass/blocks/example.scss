@@ -1,49 +1,54 @@
 .example {
   margin: 0;
   padding: 0;
-  padding-top: 17px;
+  padding-top: 18px;
   padding-bottom: 36px;
   background-color: #f2f2f2;
+
+  @media (min-width: 768px) {
+    padding-top: 45px;
+    background-color: #ffffff;
+  }
 }
 
 .example__wrapper {
   margin: 0 auto;
   padding: 0 20px;
   max-width: 450px;
+
+  @media (min-width: 768px) {
+    padding: 0 30px;
+    max-width: 1000px;
+  }
 }
 
 .example__title {
   font-family: $family-oswald;
-  font-size: $caption;
+  font-size: $mobile-caption;
   line-height: 60px;
   font-weight: 400;
   color: $title-color;
   margin: 0;
-  margin-bottom: 23px;
+  margin-bottom: 22px;
+
+  @media (min-width: 768px) {
+    font-size: $tablet-caption;
+    line-height: 60px;
+    margin-bottom: 61px;
+  }
 }
 
 .example__promo {
   font-family: $family-arial;
-  font-size: $text;
+  font-size: $mobile-text;
   line-height: 18px;
   font-weight: 400;
   color: $text-color;
   margin-bottom: 25px;
-}
 
-.example__table {
-  display: flex;
-  margin-bottom: 34px;
-}
-
-.example__total {
-  font-family: $family-oswald;
-  font-size: $text;
-  line-height: 20px;
-  font-weight: 400;
-  color: $title-color;
-  margin: 0;
-  margin-bottom: 34px;
-  text-align: center;
-  text-transform: uppercase;
+  @media (min-width: 768px) {
+    font-size: $tablet-text;
+    line-height: 24px;
+    margin-bottom: 54px;
+  }
 }

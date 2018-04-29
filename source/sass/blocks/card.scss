@@ -32,7 +32,7 @@
 
 .card__name {
   font-family: $family-oswald;
-  font-size: $common-uppercase;
+  font-size: $mobile-common-uppercase;
   line-height: 20px;
   font-weight: 400;
   color: $title-color;
@@ -57,7 +57,7 @@
 .card__property,
 .card__value {
   font-family: $family-arial;
-  font-size: $table-text;
+  font-size: $mobile-table-text;
   line-height: 16px;
   font-weight: 400;
   color: $text-color;
@@ -70,7 +70,7 @@
 
 .card__promo {
   font-family: $family-arial;
-  font-size: $promo-text;
+  font-size: $mobile-promo-text;
   line-height: 16px;
   font-weight: 400;
   color: $text-color;
@@ -99,5 +99,5 @@
 
 .card--additional .card__property,
 .card--additional .card__value {
-  font-size: $text;
+  font-size: $mobile-text;
 }

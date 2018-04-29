@@ -1,39 +1,117 @@
+.parameters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  @media (min-width: 768px) {
+    justify-content: flex-start;
+  }
+}
+
 .parameters__group {
   position: relative;
+  text-align: center;
+  margin-bottom: 16px;
 
-  &:first-child {
-    margin-right: 32px;
+  &:not(:first-child) {
+    margin-left: 34px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 54px;
+    border: 1px solid #cdcdcd;
+    border-radius: 3px;
+    z-index: 0;
+  }
+
+  @media (min-width: 768px) {
+    &:not(:first-child) {
+      margin-left: 44px;
+    }
+
+    &::before {
+      height: 70px;
+    }
   }
 }
 
 .parameters__value {
   font-family: $family-oswald;
-  font-size: $title;
+  font-size: $mobile-table-value;
   line-height: 24px;
   font-weight: 400;
   color: $title-color;
   width: 122px;
   margin: 0;
-  padding: 12px 0 18px 0;
+  padding-top: 15px;
+  padding-bottom: 8px;
   text-transform: uppercase;
   text-align: center;
-  border: 1px solid #cdcdcd;
-  border-radius: 3px;
+
+  @media (min-width: 768px) {
+    font-size: $tablet-table-value;
+    line-height: 37px;
+    padding-top: 17px;
+    padding-bottom: 6px;
+    width: 160px;
+  }
 }
 
 .parameters__property {
   font-family: $family-arial;
-  font-size: $table-text;
+  font-size: $mobile-table-text;
   line-height: 12px;
   font-weight: 400;
   color: $text-color;
-  position: absolute;
-  left: calc((100% - 86px) / 2);
-  bottom: -15px;
-  display: block;
+  position: relative;
+  z-index: 2;
+  display: inline-block;
   width: 60px;
-  margin: 0;
+  margin: 0 auto;
   padding: 0 13px;
   text-align: center;
   background-color: #f2f2f2;
+
+  @media (min-width: 768px) {
+    font-size: $tablet-table-text;
+    line-height: 14px;
+    width: auto;
+    padding: 0 7px;
+    background-color: #ffffff;
+  }
+}
+
+.parameters__total {
+  font-family: $family-oswald;
+  font-size: $mobile-text;
+  line-height: 20px;
+  font-weight: 400;
+  color: $title-color;
+  margin: 0;
+  margin-bottom: 34px;
+  text-align: center;
+  text-transform: uppercase;
+
+  @media (min-width: 768px) {
+    font-size: $tablet-common-uppercase;
+    line-height: 20px;
+    width: 180px;
+    margin-left: auto;
+    padding-top: 12px;
+    text-align: right;
+    align-self: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .parameters__total span {
+    display: block;
+    padding-top: 10px;
+  }
 }

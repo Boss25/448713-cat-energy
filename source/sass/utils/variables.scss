@@ -8,15 +8,22 @@ $family-arial: "Arial", sans-serif;
 $title-color: #111111;
 $text-color: #444444;
 
-/*font-size*/
-$caption: 36px;
-$title: 24px;
-$menu: 20px;
-$common-uppercase: 16px;
-$text: 14px;
-$table-text: 12px;
-$promo-text: 12px;
+/*mobile-font-size*/
+$mobile-caption: 36px;
+$mobile-title: 24px;
+$mobile-menu: 20px;
+$mobile-common-uppercase: 16px;
+$mobile-text: 14px;
+$mobile-table-value: 24px;
+$mobile-table-text: 12px;
+$mobile-promo-text: 12px;
 
-@media (min-width: 768px) {
-  $menu: 18px;
-}
+/*tablet-font-size*/
+$tablet-caption: 60px;
+$tablet-title: 36px;
+$tablet-menu: 18px;
+$tablet-common-uppercase: 20px;
+$tablet-text: 16px;
+$tablet-table-value: 30px;
+$tablet-table-text: 14px;
+$tablet-promo-text: 12px;
