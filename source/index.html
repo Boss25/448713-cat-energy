@@ -77,11 +77,14 @@
       </div>
     </div>
     <div class="example__slider slider">
-      <img class="slider__image" src="img/before-mobile@1x.png" alt="толстый кот">
-      <img class="slider__image slider__image--second" src="img/after-mobile@1x.png" alt="толстый кот">
+      <div class="slider__container slider__container--left">
+        <img class="slider__image slider__image--first" src="img/before-mobile@1x.png" alt="толстый кот">
+      </div>
+      <div class="slider__container slider__container--right">
+        <img class="slider__image slider__image--second" src="img/after-mobile@1x.png" alt="толстый кот">
+      </div>
       <div class="slider__control">
-        <input class="slider__radio slider__radio--before visually-hidden" type="radio" name="slide" id="before"
-                checked>
+        <input class="slider__radio slider__radio--before visually-hidden" type="radio" name="slide" id="before" checked>
         <label class="slider__border slider__border--before" for="before">было</label>
         <span class="slider__handler invisible" tabindex="0">&bull;</span>
         <input class="slider__radio slider__radio--after visually-hidden" type="radio" name="slide" id="after">
