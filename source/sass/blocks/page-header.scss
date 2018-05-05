@@ -11,7 +11,8 @@
   margin-bottom: 22px;
   padding-top: 28px;
   box-sizing: border-box;
-  background: url("../img/index-can-mobile@1x.png"), url("../img/index-background-mobile@1x.jpg"), linear-gradient(to bottom, #64a83b 305px, #ffffff 305px, #ffffff 100%);
+  background: url("../img/index-can-mobile@1x.png"), url("../img/index-background-mobile@1x.jpg"),
+  linear-gradient(to bottom, #64a83b 305px, #ffffff 305px, #ffffff 100%);
   background-position: center 166px, center top, center;
   background-repeat: no-repeat;
 
@@ -44,6 +45,7 @@
     color: $title-color;
     width: auto;
     max-width: 410px;
+    margin-bottom: 0;
     padding-top: 15px;
     padding-right: 20px;
     padding-left: 20px;
@@ -59,6 +61,15 @@
     margin: 0;
     margin-bottom: 40px;
     text-align: left;
+
+    &--no-bkgnd {
+      max-width: 1000px;
+      margin-bottom: 0;
+      padding-top: 34px;
+      padding-bottom: 50px;
+      padding-left: 0;
+      padding-right: 0;
+    }
   }
 }
 
@@ -84,9 +95,3 @@
     text-align: left;
   }
 }
-
-/*.page-header__image {
-  display: block;
-  margin: 0 auto;
-  margin-bottom: 3px;
-}*/

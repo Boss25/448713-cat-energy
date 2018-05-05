@@ -1,33 +1,77 @@
 .card {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
-  padding: 0 19px;
+  justify-content: center;
+  align-content: flex-end;
+  padding-top: 0;
+  padding-left: 19px;
+  padding-right: 19px;
   padding-bottom: 24px;
   border: 1px solid #ededed;
-  border-top: none;
 
-  &:first-child {
-    border-top: 1px solid #ededed;
+  &:not(:first-child) {
+    margin-top: -1px;
   }
 
   &--additional {
-    /*width: 280px;*/
     margin: 0 20px;
-    padding: 0;
+    padding-right: 0;
+    padding-left: 0;
     padding-bottom: 17px;
-    border: none;
-    border-bottom: 1px solid #cdcdcd;
+    border-color: #cdcdcd;
+    border-right: none;
+    border-left: none;
 
     &:first-child {
       border-top: 1px solid #cdcdcd;
     }
   }
+
+  @media (min-width: 768px) {
+    &:not(.card--additional) {
+      width: 45.7%;
+      padding-left: 38px;
+      padding-right: 38px;
+      padding-bottom: 40px;
+      box-sizing: border-box;
+      background: linear-gradient(180deg, #ffffff 82px, #f2f2f2 82px, #f2f2f2 100%);
+      border: none;
+
+      &:last-child {
+        background: transparent;
+
+        &::before {
+          content: "";
+          position: absolute;
+          left: -1px;
+          bottom: -1px;
+          z-index: -1;
+          display: block;
+          width: 100%;
+          height: 430px;
+          background-color: #ffffff;
+          border: 1px solid #e6e6e6;
+        }
+      }
+    }
+  }
+}
+
+.card__image {
+  display: block;
 }
 
 .card__description {
   width: calc(100% - 140px);
   margin-bottom: 14px;
   padding-top: 21px;
+
+  @media (min-width: 768px) {
+    width: 100%;
+    padding-top: 39px;
+    margin-bottom: 33px;
+  }
 }
 
 .card__name {
@@ -47,6 +91,21 @@
     padding-top: 79px;
     text-align: center;
   }
+
+  @media (min-width: 768px) {
+    font-size: $tablet-common-uppercase;
+    line-height: 20px;
+    width: 140px;
+    margin: 0 auto;
+    margin-bottom: 17px;
+    text-align: center;
+
+    &--add {
+      margin-bottom: 24px;
+      padding-top: 79px;
+      text-align: center;
+    }
+  }
 }
 
 .card__attributes {
@@ -62,6 +121,14 @@
   font-weight: 400;
   color: $text-color;
   padding: 0;
+
+  @media (min-width: 768px) {
+    font-size: $tablet-text;
+    line-height: 16px;
+    padding-top: 7px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #cdcdcd;
+  }
 }
 
 .card__value {
@@ -78,6 +145,13 @@
   margin: 0;
   margin-bottom: 21px;
   text-align: center;
+
+  @media (min-width: 768px) {
+    font-size: $tablet-text;
+    line-height: 19px;
+    width: 200px;
+    padding-bottom: 63px;
+  }
 }
 
 .card__action {

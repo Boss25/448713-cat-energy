@@ -1,12 +1,19 @@
 .socials {
   display: flex;
-  align-items: flex-end;
+  width: 100%;
+  min-height: 62px;
+
+  @include list-default;
+  align-items: center;
   justify-content: center;
   border-top: 1px solid #d9d9d9;
 
-  @include list-default;
-  padding-top: 20px;
-  margin-bottom: 23px;
+
+  @media (min-width: 768px) {
+    width: 125px;
+    border-top: none;
+    justify-content: space-between;
+  }
 }
 
 .socials__link {
@@ -27,7 +34,27 @@
 
   &--facebook {
     width: 10px;
-    height: 19px;
+    height: 21px;
     padding-right: 12px;
+  }
+
+  @media (min-width: 768px) {
+    &--vk {
+      width: 30px;
+      height: 18px;
+      margin-right: 0;
+    }
+
+    &--instagram {
+      width: 23px;
+      height: 23px;
+      margin-right: 0;
+    }
+
+    &--facebook {
+      width: 14px;
+      height: 30px;
+      padding-right: 0;
+    }
   }
 }

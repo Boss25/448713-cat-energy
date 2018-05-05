@@ -5,27 +5,6 @@
   list-style: none;
 }
 
-@mixin green-line-title {
-  font-family: $family-oswald;
-
-  font-size: $mobile-title;
-  line-height: 24px;
-  font-weight: 400;
-  color: $title-color;
-  position: relative;
-
-  &::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    right: 0;
-    display: block;
-    width: 53px;
-    height: 3px;
-    background-color: #68b738;
-  }
-}
-
 body {
   margin: 0;
   padding: 0;
