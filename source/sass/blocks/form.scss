@@ -2,6 +2,10 @@
   max-width: 450px;
   margin: 0 auto;
   margin-bottom: 32px;
+
+  @media (min-width: 768px) {
+    max-width: 1000px;
+  }
 }
 
 .form__promo {
@@ -15,6 +19,14 @@
   margin-bottom: 36px;
   padding-left: 20px;
   padding-right: 30px;
+
+  @media (min-width: 768px) {
+    font-size: $tablet-common-uppercase;
+    line-height: 30px;
+    width: 330px;
+    margin-bottom: 64px;
+    padding-left: 70px;
+  }
 }
 
 .form__section {
@@ -31,6 +43,43 @@
     padding-bottom: 21px;
     border: 1px solid #ededed;
   }
+
+  @media (min-width: 768px) {
+    padding-right: 67px;
+    padding-left: 70px;
+
+    &--border {
+      width: 629px;
+      box-sizing: border-box;
+      margin-top: 72px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-top: 24px;
+      padding-bottom: 24px;
+      padding-left: 27px;
+      padding-right: 27px;
+    }
+
+    &--border .form__group {
+      margin-bottom: 13px;
+    }
+  }
+}
+
+.form__caption {
+  @media (min-width: 768px) {
+    margin-top: 76px;
+    margin-bottom: 75px;
+
+    &--comment {
+      margin-top: 66px;
+    }
+
+    &--add {
+      margin-top: 65px;
+      margin-bottom: 57px;
+    }
+  }
 }
 
 .form__group {
@@ -42,19 +91,10 @@
   &:last-child {
     margin-bottom: 0;
   }
-}
 
-.form__caption {
-  font-family: $family-oswald;
-  font-size: $mobile-title;
-  line-height: 24px;
-  font-weight: 400;
-  color: $title-color;
-  display: block;
-  width: 100%;
-  margin: 0;
-  padding-top: 28px;
-  padding-bottom: 34px;
+  @media (min-width: 768px) {
+    margin-bottom: 20px;
+  }
 }
 
 .form__input,
@@ -71,6 +111,14 @@
   padding-right: 10px;
   box-sizing: border-box;
   border: 1px solid #e6e6e6;
+
+  @media (min-width: 768px) {
+    font-size: $tablet-common-uppercase;
+    line-height: 20px;
+    padding-top: 16px;
+    padding-left: 18px;
+    padding-bottom: 14px;
+  }
 }
 
 .form__input {
@@ -85,6 +133,11 @@
   max-width: 450px;
   min-height: 150px;
   margin: 0;
+
+  @media (min-width: 768px) {
+    min-height: 174px;
+    max-width: 1000px;
+  }
 }
 
 .form__label {
@@ -108,6 +161,20 @@
   &[for="age"] {
     width: 108px;
   }
+
+  @media (min-width: 768px) {
+    font-size: $tablet-common-uppercase;
+    line-height: 20px;
+    padding-right: 17px;
+
+    &[for="weight"] {
+      padding-right: 21px;
+    }
+
+    &[for="age"] {
+      width: auto;
+    }
+  }
 }
 
 .form__radio + .form__label,
@@ -115,6 +182,12 @@
   padding-top: 6px;
   padding-bottom: 6px;
   padding-left: 45px;
+
+  @media (min-width: 768px) {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 60px;
+  }
 }
 
 .form__submit {

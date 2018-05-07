@@ -3,11 +3,11 @@
   margin: 0 auto;
   padding: 0 20px;
 
-  &--wide {
-    padding: 0;
-  }
-
   @media (min-width: 768px) {
     padding: 0 30px;
+  }
+
+  &--wide {
+    padding: 0;
   }
 }
