@@ -1,0 +1,223 @@
+.card {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-end;
+  padding-top: 0;
+  padding-left: 19px;
+  padding-right: 19px;
+  padding-bottom: 24px;
+  border: 1px solid #ededed;
+
+  @media (max-width: 767px) {
+    &:not(:first-child) {
+      margin-top: -1px;
+    }
+  }
+
+  &--additional {
+    margin: 0 20px;
+    padding-right: 0;
+    padding-left: 0;
+    padding-bottom: 17px;
+    border-color: #cdcdcd;
+    border-right: none;
+    border-left: none;
+
+    &:first-child {
+      border-top: 1px solid #cdcdcd;
+    }
+  }
+
+  @media (min-width: 768px) {
+    &:not(&--additional) {
+      width: 45.7%;
+      padding-left: 38px;
+      padding-right: 37px;
+      padding-bottom: 40px;
+      box-sizing: border-box;
+      background: linear-gradient(180deg, #ffffff 82px, #f2f2f2 82px, #f2f2f2 100%);
+      border: none;
+
+      &:last-child {
+        background: transparent;
+
+        &::before {
+          content: "";
+          position: absolute;
+          left: -1px;
+          bottom: -1px;
+          z-index: -1;
+          display: block;
+          width: 100%;
+          height: 430px;
+          background-color: #ffffff;
+          border: 1px solid #e6e6e6;
+        }
+      }
+    }
+
+    &--additional {
+      margin: 0 30px;
+      padding-left: 37px;
+      padding-right: 36px;
+      padding-bottom: 27px;
+      border-left: 1px solid #e6e6e6;
+      border-right: 1px solid #e6e6e6;
+
+      &:not(:first-child) {
+        margin-top: -1px;
+      }
+    }
+  }
+}
+
+.card__image {
+  display: block;
+}
+
+.card__description {
+  width: calc(100% - 140px);
+  margin-bottom: 14px;
+  padding-top: 21px;
+
+  @media (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-top: 39px;
+    margin-bottom: 33px;
+  }
+}
+
+.card__name {
+  font-family: $family-oswald;
+  font-size: $mobile-common-uppercase;
+  line-height: 20px;
+  font-weight: 400;
+  color: $title-color;
+  text-transform: uppercase;
+  width: 80px;
+  margin-top: 0;
+  margin-bottom: 13px;
+
+  &--add {
+    width: 100%;
+    margin-bottom: 8px;
+    padding-top: 79px;
+    text-align: center;
+  }
+
+  @media (min-width: 768px) {
+    font-size: $tablet-common-uppercase;
+    line-height: 20px;
+    width: 140px;
+    margin: 0 auto;
+    margin-bottom: 17px;
+    text-align: center;
+
+    &--add {
+      margin-bottom: 24px;
+      padding-top: 79px;
+      text-align: center;
+    }
+  }
+}
+
+.card__attributes {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.card__property,
+.card__value {
+  font-family: $family-arial;
+  font-size: $mobile-table-text;
+  line-height: 16px;
+  font-weight: 400;
+  color: $text-color;
+  padding: 0;
+
+  @media (min-width: 768px) {
+    font-size: $tablet-text;
+    line-height: 16px;
+    padding-top: 7px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #cdcdcd;
+  }
+}
+
+.card__value {
+  text-align: right;
+}
+
+.card__promo {
+  font-family: $family-arial;
+  font-size: $mobile-promo-text;
+  line-height: 16px;
+  font-weight: 400;
+  color: $text-color;
+  width: 100%;
+  margin: 0;
+  margin-bottom: 21px;
+  text-align: center;
+
+  @media (min-width: 768px) {
+    font-size: $tablet-text;
+    line-height: 19px;
+    width: 200px;
+    padding-bottom: 63px;
+  }
+}
+
+.card__action {
+  width: 100%;
+}
+
+.card--additional .card__description {
+  justify-content: space-between;
+  width: 100%;
+  padding-top: 11px;
+
+  @media (min-width: 768px) {
+    align-items: flex-end;
+    margin-bottom: 24px;
+    padding-top: 27px;
+  }
+}
+
+.card--additional .card__name {
+  width: 100%;
+  margin-bottom: 10px;
+
+  @media (min-width: 768px) {
+    width: auto;
+    margin: 0;
+  }
+}
+
+.card--additional .card__attributes {
+  @media (min-width: 768px) {
+    width: auto;
+    flex-shrink: 0;
+  }
+}
+
+.card--additional .card__property,
+.card--additional .card__value {
+  font-size: $mobile-text;
+
+  @media (min-width: 768px) {
+    font-size: $tablet-text;
+    line-height: 20px;
+    border-bottom: none;
+    padding: 0;
+  }
+}
+
+.card--additional .card__property {
+  @media (min-width: 768px) {
+    padding-right: 52px;
+  }
+}

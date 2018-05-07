@@ -1,0 +1,13 @@
+.page-main__section {
+  min-width: 280px;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  @media (min-width: 768px) {
+    padding: 0 30px;
+  }
+
+  &--wide {
+    padding: 0;
+  }
+}

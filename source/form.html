@@ -8,31 +8,31 @@
 </head>
 <body>
 <header class="page-header">
-  <div class="page-header__wrapper">
-    <a href="index.html" class="page-header__logo invisible">Cat Energy</a>
-    <button class="page-header__burger invisible">Меню</button>
-  </div>
   <nav class="main-nav">
+    <div class="main-nav__wrapper">
+      <a href="index.html" class="main-nav__logo invisible">Cat Energy</a>
+      <button class="main-nav__burger invisible">Меню</button>
+    </div>
     <ul class="main-nav__list">
       <li class="main-nav__item">
-        <a href="index.html" class="main-nav__link">Главная</a>
+        <a href="index.html" class="main-nav__link main-nav__link">Главная</a>
       </li>
       <li>
         <a href="catalog.html" class="main-nav__link">Каталог продукции</a>
       </li>
       <li>
-        <a class="main-nav__link">Подбор программы</a>
+        <a class="main-nav__link  main-nav__link--active">Подбор программы</a>
       </li>
     </ul>
   </nav>
-  <h1 class="page-header__title page-header__title--black">Подбор программы</h1>
+  <h1 class="page-header__title page-header__title--no-bkgnd">Подбор программы</h1>
 </header>
 <main class="page-main">
-  <section class="page-main__section">
+  <section class="page-main__section page-main__section--wide">
     <h2 class="page-main__title visually-hidden">Форма анкеты</h2>
     <form class="page-main__form form" action="https://echo.htmlacademy.ru" method="post">
       <p class="form__promo">Заполните анкету и мы подберем программу питания для вашего кота</p>
-      <fieldset class="form__section">
+      <div class="form__section">
         <legend class="form__caption visually-hidden">Параметры кота</legend>
         <div class="form__group">
           <label class="form__label" for="name">Имя:*</label>
@@ -46,49 +46,63 @@
           <label  class="form__label" for="age">возраст (лет):</label>
           <input class="form__input" type="text" id="age" name="age" placeholder="7">
         </div>
-      </fieldset>
-      <fieldset class="form__section">
-        <legend class="form__caption visually-hidden">программа</legend>
-        <input class="form__radio visually-hidden" id="lite" type="radio" name="program" tabindex="0" checked>
-        <label class="form__label" for="lite">Похудение</label>
-        <input class="form__radio visually-hidden" id="pump" type="radio" name="program" tabindex="0">
-        <label class="form__label" for="pump">Набор массы</label>
-        <input class="form__radio visually-hidden" id="undefined" type="radio" name="program" tabindex="0">
-        <label class="form__label" for="undefined">Не знаю (нужен ваш совет)</label>
-      </fieldset>
-      <fieldset class="form__section">
-        <legend class="form__caption">Контактные данные(владельца кота)</legend>
-        <p class="form__group">
-          <label class="form__label" for="e-mail">возраст (лет):</label>
+      </div>
+      <div class="form__section form__section--border">
+        <p class="form__caption visually-hidden">программа</p>
+        <div class="form__group">
+          <input class="form__radio visually-hidden" id="lite" type="radio" name="program" tabindex="0" checked>
+          <label class="form__label" for="lite">Похудение</label>
+        </div>
+        <div class="form__group">
+          <input class="form__radio visually-hidden" id="pump" type="radio" name="program" tabindex="0">
+          <label class="form__label" for="pump">Набор массы</label>
+        </div>
+        <div class="form__group">
+          <input class="form__radio visually-hidden" id="undefined" type="radio" name="program" tabindex="0">
+          <label class="form__label" for="undefined">Не знаю (нужен ваш совет)</label>
+        </div>
+      </div>
+      <h3 class="form__caption crossed-title"><span class="crossed-title__text crossed-title__text--long">Контактные данные (владельца кота)</span></h3>
+      <div class="form__section">
+        <div class="form__group">
+          <label class="form__label" for="e-mail">E-mail:*</label>
           <input class="form__input form__input--e-mail" type="text" id="e-mail" name="e-mail" placeholder="kuklachev@gmail.com">
-        </p>
-        <p class="form__group">
-          <label class="form__label" for="phone">возраст (лет):</label>
+        </div>
+        <div class="form__group">
+          <label class="form__label" for="phone">Телефон:*</label>
           <input class="form__input form__input--phone" type="text" id="phone" name="phone" placeholder="8 (960) 900-60-90">
-        </p>
-      </fieldset>
-      <fieldset class="form__section">
-        <legend class="form__caption">Комментарий</legend>
-        <p class="form__group">
-          <label class="form__label" for="comment">Расскажите обо всех повадках кота</label>
-          <textarea class="form__text" id="comment" name="comment"  cols="30" rows="5" placeholder="Расскажите обо всех повадках кота" ></textarea>
-        </p>
-      </fieldset>
-      <fieldset class="form__section">
-        <input class="form__checkbox visually-hidden" id="add1" name="add" type="checkbox" tabindex="0" checked>
-        <label class="form__label" for="add1">Сахарозаенитель</label>
-        <input class="form__checkbox visually-hidden" id="add2" name="add" type="checkbox"  tabindex="0">
-        <label class="form__label" for="add2">Питьевая вода</label>
-        <input class="form__checkbox visually-hidden" id="add3" name="add" type="checkbox" tabindex="0">
-        <label class="form__label" for="add3">Молоко</label>
-        <input class="form__checkbox visually-hidden" id="add4" name="add" type="checkbox" tabindex="0">
-        <label class="form__label" for="add4">Витамины</label>
-      </fieldset>
+        </div>
+          <!--<label class="form__caption" for="comment">Комментарий</label>
+          <textarea class="form__text" id="comment" name="comment"  cols="30" rows="5" placeholder="Расскажите обо всех повадках кота" ></textarea>-->
+      </div>
+      <h3 class="form__caption form__caption--comment crossed-title"><span class="crossed-title__text">Комментарий</span></h3>
+      <div class="form__section">
+        <textarea class="form__text" id="comment" name="comment" placeholder="Расскажите обо всех повадках кота" ></textarea>
+      </div>
+      <h3 class="form__caption form__caption--add crossed-title"><span class="crossed-title__text">Дополнительно</span></h3>
+      <div class="form__section form__section--grid">
+        <div class="form__group">
+          <input class="form__checkbox visually-hidden" id="add1" name="add" type="checkbox" tabindex="0" checked>
+          <label class="form__label" for="add1">Сахарозаменитель</label>
+        </div>
+        <div class="form__group">
+          <input class="form__checkbox visually-hidden" id="add2" name="add" type="checkbox" tabindex="0">
+          <label class="form__label" for="add2">Питьевая вода</label>
+        </div>
+        <div class="form__group">
+          <input class="form__checkbox visually-hidden" id="add3" name="add" type="checkbox" tabindex="0">
+          <label class="form__label" for="add3">Молоко</label>
+        </div>
+        <div class="form__group">
+          <input class="form__checkbox visually-hidden" id="add4" name="add" type="checkbox" tabindex="0">
+          <label class="form__label" for="add4">Витамины</label>
+        </div>
+      </div>
       <button class="form__submit button">отправить заявку</button>
       <p class="form__note">* — Обязательные поля</p>
     </form>
   </section>
-  <section class="page-main__section contacts">
+  <section class="page-main__section contacts  contacts--gray">
     <h2 class="contacts__title visually-hidden">Контакты</h2>
     <div class="contacts__promo">
       <p class="contacts__text">Приглашаем<br>к сотрудничеству дилеров!</p>
@@ -99,21 +113,52 @@
   </section>
 </main>
 <footer class="page-footer">
-  <a href="form.html" class="page-footer__logo invisible">
-    <object type="image/svg+xml" data="img/logo-footer.svg" class="logo">
-    </object>Cat Energy</a>
-  <ul class="page-footer__links socials">
-    <li class="socials__item">
-      <a href="https://www.facebook.com/" class="socials__link socials__link--vk invisible">vkontakte</a>
-    </li>
-    <li class="socials__item">
-      <a href="https://www.instagram.com/" class="socials__link socials__link--instagram invisible">instagram</a>
-    </li>
-    <li class="socials__item">
-      <a href="https://twitter.com/" class="socials__link socials__link--facebook invisible">facebook</a>
-    </li>
-  </ul>
-  <a class="page-footer__dev" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+  <div class="page-footer__wrapper">
+    <a href="form.html" class="page-footer__logo invisible">
+      <?xml version="1.0" encoding="utf-8"?>
+      <!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0) -->
+      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width=128 height=24 viewBox="0 0 127.8 23.4" style="enable-background:new 0 0 127.8 23.4;" xml:space="preserve">
+        <style type="text/css">
+          .st0 {
+            fill: #111111;
+          }
+        </style>
+        <g>
+          <path
+      class="st0"
+      d="M1.6,21.5c-1-1.3-1.6-3.2-1.6-5.6V7.6c0-2.5,0.5-4.4,1.5-5.7C2.6,0.6,4.3,0,6.8,0c2.4,0,4.1,0.6,5.1,1.7
+    c1,1.1,1.5,2.8,1.5,4.9v2H8.5V6.3c0-0.9-0.1-1.6-0.3-2S7.6,3.5,6.8,3.5c-0.7,0-1.2,0.2-1.4,0.7S5.1,5.5,5.1,6.4v10.7
+    c0,0.9,0.1,1.6,0.4,2.1c0.2,0.5,0.7,0.7,1.4,0.7c0.7,0,1.1-0.2,1.3-0.7c0.2-0.5,0.3-1.2,0.3-2.1v-2.4h4.9v2c0,2.1-0.5,3.8-1.5,5
+    c-1,1.2-2.7,1.8-5.1,1.8C4.4,23.4,2.6,22.8,1.6,21.5z"/>
+          <path class="st0" d="M19.3,0.3h5.7l4.2,22.8h-4.6l-0.8-4.8h-3.3l-0.8,4.8H15L19.3,0.3z M23.4,15.3l-1.2-8.9L21,15.3H23.4z"/>
+          <path class="st0" d="M32.7,4.1h-3.4V0.3h11.9v3.7h-3.4v19.1h-5.1V4.1z"/>
+          <path class="st0" d="M50.3,0.3h8.8v2.4h-5.7v7.5h4.6v2.3h-4.6v8.4h5.7v2.3h-8.9V0.3z"/>
+          <path class="st0" d="M61.7,0.3h2.2l6.5,15.1V0.3h2.6v22.8h-2L64.4,7.5v15.6h-2.7V0.3z"/>
+          <path class="st0" d="M76,0.3h8.8v2.4h-5.7v7.5h4.6v2.3h-4.6v8.4h5.7v2.3H76V0.3z"/>
+          <path class="st0" d="M87.4,0.3H92c2.3,0,4,0.5,5.1,1.4c1.1,0.9,1.6,2.5,1.6,4.6c0,2.9-0.9,4.7-2.8,5.3l3.2,11.4H96l-3-10.7h-2.5
+    v10.7h-3.2V0.3z M91.8,10.1c1.4,0,2.3-0.3,2.9-0.8c0.6-0.5,0.9-1.5,0.9-3c0-0.9-0.1-1.7-0.3-2.2c-0.2-0.5-0.6-0.9-1.1-1.2
+    c-0.5-0.3-1.3-0.4-2.2-0.4h-1.4v7.5H91.8z"/>
+          <path class="st0" d="M102.7,21.4c-0.9-1.3-1.4-3.2-1.4-5.8V8c0-1.8,0.2-3.2,0.5-4.3c0.4-1.1,1-2,1.9-2.6s2.1-0.9,3.7-0.9
+    c2.1,0,3.6,0.5,4.5,1.6s1.4,2.7,1.4,5v0.8h-3V6.9c0-1.1-0.1-1.9-0.2-2.5c-0.1-0.6-0.4-1-0.8-1.3c-0.4-0.3-1-0.5-1.9-0.5
+    c-0.9,0-1.5,0.2-2,0.6s-0.7,0.9-0.8,1.6s-0.2,1.6-0.2,2.7V16c0,1.7,0.2,3,0.6,3.8c0.4,0.8,1.2,1.1,2.4,1.1c1.2,0,2-0.4,2.4-1.2
+    c0.4-0.8,0.7-2.1,0.7-4v-1.6h-2.9v-2.3h5.8v11.3h-2l-0.3-2.6c-0.7,1.9-2.1,2.9-4.1,2.9C105.1,23.4,103.6,22.7,102.7,21.4z"/>
+          <path class="st0" d="M119.8,15.1l-4.9-14.7h3l3.5,11l3.4-11h3l-4.9,14.7v8h-3V15.1z"/>
+        </g>
+      </svg>
+      Cat Energy</a>
+    <ul class="page-footer__links socials">
+      <li class="socials__item">
+        <a href="https://www.facebook.com/" class="socials__link socials__link--vk invisible">vkontakte</a>
+      </li>
+      <li class="socials__item">
+        <a href="https://www.instagram.com/" class="socials__link socials__link--instagram invisible">instagram</a>
+      </li>
+      <li class="socials__item">
+        <a href="https://twitter.com/" class="socials__link socials__link--facebook invisible">facebook</a>
+      </li>
+    </ul>
+    <a class="page-footer__dev" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+  </div>
 </footer>
 </body>
 </html>
