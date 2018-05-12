@@ -1,7 +1,7 @@
 /*font-family*/
 
-$family-oswald: "Oswald", "Arial Narrow", sans-serif;
-$family-arial: "Arial", sans-serif;
+$family-primary: "Oswald", "Arial Narrow", sans-serif;
+$family-secondary: "Arial", sans-serif;
 
 /*font-color*/
 
@@ -26,4 +26,8 @@ $tablet-common-uppercase: 20px;
 $tablet-text: 16px;
 $tablet-table-value: 30px;
 $tablet-table-text: 14px;
-/*$tablet-promo-text: 12px;*/
+
+/*desktop-font-size*/
+
+$desktop-menu: 20px;
+

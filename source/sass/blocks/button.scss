@@ -1,11 +1,11 @@
 .button {
-  font-family: $family-oswald;
+  font-family: $family-primary;
   font-size: $mobile-common-uppercase;
   line-height: 20px;
   font-weight: 400;
   color: #ffffff;
   display: block;
-  max-width: 450px;
+  max-width: 410px;
   margin: 0 auto;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -15,7 +15,7 @@
   text-align: center;
   border: none;
 
-  &--header {
+  &--tall {
     font-size: 14px;
     line-height: 18px;
     padding: 11px 0;
@@ -25,7 +25,20 @@
       margin: 0;
       padding-top: 17px;
       padding-bottom: 17px;
-      width: 245px;
+    }
+  }
+
+  &--large {
+    font-size: 16px;
+    line-height: 20px;
+    padding-top: 12px;
+    padding-bottom: 8px;
+
+    @media (min-width: 768px) {
+      font-size: 20px;
+      margin: 0;
+      padding-top: 17px;
+      padding-bottom: 17px;
     }
   }
 

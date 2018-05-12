@@ -1,13 +1,21 @@
 .page-main__section {
   min-width: 280px;
+  max-width: 410px;
   margin: 0 auto;
   padding: 0 20px;
 
   @media (min-width: 768px) {
     padding: 0 30px;
+    max-width: 940px;
+  }
+
+  @media (min-width: 1300px) {
+    max-width: 1220px;
+    padding: 0 40px;
   }
 
   &--wide {
     padding: 0;
+    max-width: none;
   }
 }

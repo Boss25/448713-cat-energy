@@ -28,41 +28,43 @@
   <h1 class="page-header__title page-header__title--no-bkgnd">Подбор программы</h1>
 </header>
 <main class="page-main">
-  <section class="page-main__section page-main__section--wide">
+  <section class="page-main__section">
     <h2 class="page-main__title visually-hidden">Форма анкеты</h2>
     <form class="page-main__form form" action="https://echo.htmlacademy.ru" method="post">
       <p class="form__promo">Заполните анкету и мы подберем программу питания для вашего кота</p>
-      <div class="form__section">
-        <legend class="form__caption visually-hidden">Параметры кота</legend>
-        <div class="form__group">
-          <label class="form__label" for="name">Имя:*</label>
-          <input class="form__input" type="text" id="name" name="name" placeholder="барсик" required>
+      <div class="form__wrapper">
+        <div class="form__section">
+          <h3 class="form__caption visually-hidden">Параметры кота</h3>
+          <div class="form__group">
+            <label class="form__label" for="name">Имя:*</label>
+            <input class="form__input" type="text" id="name" name="name" placeholder="барсик" required>
+          </div>
+          <div class="form__group">
+            <label class="form__label" for="weight">вес (кг):*</label>
+            <input class="form__input" type="text" id="weight" name="weight" placeholder="7" required>
+          </div>
+          <div class="form__group">
+            <label class="form__label" for="age">возраст (лет):</label>
+            <input class="form__input" type="text" id="age" name="age" placeholder="7">
+          </div>
         </div>
-        <div class="form__group">
-          <label class="form__label" for="weight">вес (кг):*</label>
-          <input class="form__input" type="text" id="weight" name="weight" placeholder="7" required>
-        </div>
-        <div class="form__group">
-          <label  class="form__label" for="age">возраст (лет):</label>
-          <input class="form__input" type="text" id="age" name="age" placeholder="7">
+        <div class="form__section form__section--border">
+          <p class="form__caption visually-hidden">программа</p>
+          <div class="form__group">
+            <input class="form__radio visually-hidden" id="lite" type="radio" name="program" tabindex="0" checked>
+            <label class="form__label" for="lite">Похудение</label>
+          </div>
+          <div class="form__group">
+            <input class="form__radio visually-hidden" id="pump" type="radio" name="program" tabindex="0">
+            <label class="form__label" for="pump">Набор массы</label>
+          </div>
+          <div class="form__group">
+            <input class="form__radio visually-hidden" id="undefined" type="radio" name="program" tabindex="0">
+            <label class="form__label" for="undefined">Не знаю (нужен ваш совет)</label>
+          </div>
         </div>
       </div>
-      <div class="form__section form__section--border">
-        <p class="form__caption visually-hidden">программа</p>
-        <div class="form__group">
-          <input class="form__radio visually-hidden" id="lite" type="radio" name="program" tabindex="0" checked>
-          <label class="form__label" for="lite">Похудение</label>
-        </div>
-        <div class="form__group">
-          <input class="form__radio visually-hidden" id="pump" type="radio" name="program" tabindex="0">
-          <label class="form__label" for="pump">Набор массы</label>
-        </div>
-        <div class="form__group">
-          <input class="form__radio visually-hidden" id="undefined" type="radio" name="program" tabindex="0">
-          <label class="form__label" for="undefined">Не знаю (нужен ваш совет)</label>
-        </div>
-      </div>
-      <h3 class="form__caption crossed-title"><span class="crossed-title__text crossed-title__text--long">Контактные данные (владельца кота)</span></h3>
+      <h3 class="form__caption crossed-title"><span class="crossed-title__text crossed-title__text--shift crossed-title__text--long">Контактные данные (владельца кота)</span></h3>
       <div class="form__section">
         <div class="form__group">
           <label class="form__label" for="e-mail">E-mail:*</label>
@@ -72,14 +74,12 @@
           <label class="form__label" for="phone">Телефон:*</label>
           <input class="form__input form__input--phone" type="text" id="phone" name="phone" placeholder="8 (960) 900-60-90">
         </div>
-          <!--<label class="form__caption" for="comment">Комментарий</label>
-          <textarea class="form__text" id="comment" name="comment"  cols="30" rows="5" placeholder="Расскажите обо всех повадках кота" ></textarea>-->
       </div>
-      <h3 class="form__caption form__caption--comment crossed-title"><span class="crossed-title__text">Комментарий</span></h3>
+      <h3 class="form__caption form__caption--comment crossed-title"><span class="crossed-title__text crossed-title__text--shift">Комментарий</span></h3>
       <div class="form__section">
         <textarea class="form__text" id="comment" name="comment" placeholder="Расскажите обо всех повадках кота" ></textarea>
       </div>
-      <h3 class="form__caption form__caption--add crossed-title"><span class="crossed-title__text">Дополнительно</span></h3>
+      <h3 class="form__caption form__caption--add crossed-title"><span class="crossed-title__text crossed-title__text--shift">Дополнительно</span></h3>
       <div class="form__section form__section--grid">
         <div class="form__group">
           <input class="form__checkbox visually-hidden" id="add1" name="add" type="checkbox" tabindex="0" checked>
@@ -98,16 +98,14 @@
           <label class="form__label" for="add4">Витамины</label>
         </div>
       </div>
-      <button class="form__submit button">отправить заявку</button>
-      <p class="form__note">* — Обязательные поля</p>
+      <button class="form__submit button button--large">отправить заявку</button><p class="form__note">* — Обязательные поля</p>
     </form>
   </section>
-  <section class="page-main__section contacts  contacts--gray">
+  <section class="page-main__section page-main__section--wide contacts contacts--gray">
     <h2 class="contacts__title visually-hidden">Контакты</h2>
     <div class="contacts__promo">
-      <p class="contacts__text">Приглашаем<br>к сотрудничеству дилеров!</p>
-      <p class="contacts__address">ул. Большая Конюшенная, д. 19/8
-        Санкт-Петербург</p>
+      <p class="contacts__text">Приглашаем к&nbsp;сотрудничеству дилеров!</p>
+      <p class="contacts__address">ул. Большая Конюшенная,&nbsp;д.&nbsp;19/8 <span class="contacts__city">Санкт‑Петербург</span></p>
     </div>
     <a class="contacts__map" href="#"><img src="img/bg-map-mobile@1x.png" width="100%" height=400 alt="Карта"></a>
   </section>

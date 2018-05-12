@@ -2,8 +2,13 @@
   @media (min-width: 768px) {
     position: relative;
     display: flex;
-    flex-wrap: wrap;
     min-height: 634px;
+  }
+
+  @media (min-width: 1300px) {
+    flex-grow: 1;
+    min-height: 652px;
+    padding-left: 55px;
   }
 }
 
@@ -11,13 +16,30 @@
   @media (min-width: 768px) {
     width: 50%;
     overflow: hidden;
+  }
 
-    &--left {
-      background: linear-gradient(-900deg, #ffffff 172px, #f2f2f2 172px, #f2f2f2 100%);
+  &--left {
+    @media (min-width: 768px) {
+      background: linear-gradient(180deg, #ffffff 172px, #f2f2f2 172px, #f2f2f2 100%);
     }
 
-    &--right {
-      background: linear-gradient(-900deg, #ffffff 172px, #eaeaea 172px, #eaeaea 100%);
+    @media (min-width: 1300px) {
+      width: 365px;
+      flex-shrink: 0;
+      background: linear-gradient(180deg, #ffffff 190px, #f2f2f2 190px, #f2f2f2 100%);
+    }
+  }
+
+  &--right {
+    @media (min-width: 768px) {
+      background: linear-gradient(180deg, #ffffff 172px, #eaeaea 172px, #eaeaea 100%);
+    }
+
+    @media (min-width: 1300px) {
+      /*width: calc(100% - 365px);*/
+      width: auto;
+      flex-grow: 1;
+      background: linear-gradient(180deg, #ffffff 190px, #eaeaea 190px, #eaeaea 100%);
     }
   }
 }
@@ -27,25 +49,39 @@
   margin: 0 auto;
   margin-bottom: 34px;
 
-  &--second {
-    display: none;
-  }
-
   @media (min-width: 768px) {
     margin-bottom: 0;
+  }
 
-    &--first {
+  &--first {
+    @media (min-width: 768px) {
       width: 677px;
       height: 499px;
       padding-left: calc(100% - 677px / 2);
     }
 
-    &--second {
+    @media (min-width: 1300px) {
+      width: 690px;
+      height: 517px;
+      padding-left: 0;
+    }
+  }
+
+  &--second {
+    display: none;
+
+    @media (min-width: 768px) {
       display: block;
       width: 545px;
       height: 517px;
       margin: 0;
       margin-left: calc(-545px / 2);
+    }
+
+    @media (min-width: 1300px) {
+      width: 690px;
+      height: 517px;
+      margin-left: calc(-690px * 0.53);
     }
   }
 }
@@ -73,10 +109,16 @@
       border-radius: 3px;
     }
   }
+
+  @media (min-width: 1300px) {
+    left: 134px;
+    bottom: 68px;
+    transform: none;
+  }
 }
 
 .slider__border {
-  font-family: $family-oswald;
+  font-family: $family-primary;
   font-size: $mobile-common-uppercase;
   line-height: 20px;
   font-weight: 400;

@@ -5,6 +5,12 @@
     align-items: center;
     min-height: 108px;
   }
+
+  @media (min-width: 1300px) {
+    width: 1220px;
+    min-height: 167px;
+    margin: 0 auto;
+  }
 }
 
 .main-nav__wrapper {
@@ -12,7 +18,7 @@
   justify-content: space-between;
   align-items: center;
   min-width: 280px;
-  max-width: 450px;
+  max-width: 410px;
   min-height: 65px;
   margin: 0 auto;
   padding: 0 20px;
@@ -37,6 +43,12 @@
     width: 173px;
     height: 58px;
     background-image: url("../img/logo-tablet.png");
+  }
+
+  @media (min-width: 1300px) {
+    width: 202px;
+    height: 60px;
+    background-image: url("../img/logo-desktop.svg");
   }
 }
 
@@ -69,10 +81,15 @@
     justify-content: space-between;
     border: none;
   }
+
+  @media (min-width: 1300px) {
+    width: auto;
+    min-width: 478px;
+  }
 }
 
 .main-nav__link {
-  font-family: $family-oswald;
+  font-family: $family-primary;
   font-size: $mobile-menu;
   line-height: 20px;
   font-weight: 500;
@@ -91,9 +108,23 @@
     padding-top: 12px;
     padding-bottom: 10px;
     border-bottom: none;
+  }
 
-    &--active {
+  @media (min-width: 1300px) {
+    font-size: $desktop-menu;
+    line-height: 25px;
+    padding-top: 14px;
+    padding-bottom: 8px;
+    color: #ffffff;
+  }
+
+  &--active {
+    @media (min-width: 768px) {
       border-bottom: 2px solid #68b738;
+    }
+
+    @media (min-width: 1300px) {
+      border-bottom-color: #ffffff;
     }
   }
 }
