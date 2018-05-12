@@ -18,7 +18,7 @@
 
   @media (min-width: 768px) {
     padding-left: 38px;
-    padding-right: 37px;
+    padding-right: 38px;
     padding-bottom: 40px;
     box-sizing: border-box;
     background: linear-gradient(180deg, #ffffff 82px, #f2f2f2 82px, #f2f2f2 100%);
@@ -30,7 +30,7 @@
       background: transparent;
       height: 432px;
       margin-top: 81px;
-      padding-bottom: 38px;
+      padding-bottom: 39px;
       border: 1px solid #e6e6e6;
       align-self: flex-end;
     }
@@ -49,6 +49,11 @@
       padding-right: 30px;
       padding-left: 30px;
       text-align: center;
+    }
+
+    @media (min-width: 1300px) {
+      padding-right: 0;
+      padding-left: 0;
     }
   }
 
@@ -78,6 +83,17 @@
         margin-top: -1px;
       }
     }
+
+    @media (min-width: 1300px) {
+      justify-content: space-between;
+      align-items: center;
+      align-content: center;
+      min-height: 73px;
+      padding: 0;
+      border-color: #cdcdcd;
+      border-right: none;
+      border-left: none;
+    }
   }
 
   &--additional .card__description {
@@ -89,6 +105,12 @@
       align-items: flex-end;
       margin-bottom: 24px;
       padding-top: 27px;
+    }
+
+    @media (min-width: 1300px) {
+      width: 612px;
+      padding-top: 0;
+      margin-bottom: 0;
     }
   }
 
@@ -119,11 +141,30 @@
       border-bottom: none;
       padding: 0;
     }
+
+    @media (min-width: 1300px) {
+      width: 44px;
+      padding-top: 4px;
+      text-align: left;
+    }
   }
 
   &--additional .card__property {
     @media (min-width: 768px) {
-      padding-right: 52px;
+      padding-right: 50px;
+    }
+
+    @media (min-width: 1300px) {
+      width: 170px;
+      padding-right: 71px;
+    }
+  }
+
+  &--additional .card__action {
+    @media (min-width: 1300px) {
+      width: 245px;
+      margin-right: 0;
+      margin-left: 0;
     }
   }
 }

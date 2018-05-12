@@ -17,6 +17,11 @@
     margin-bottom: 79px;
   }
 
+  @media (min-width: 1300px) {
+    width: 100%;
+    margin-top: 15px;
+  }
+
   &::after {
     content: "";
     position: absolute;

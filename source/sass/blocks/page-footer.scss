@@ -22,6 +22,12 @@
     min-height: 150px;
     padding: 0 30px;
   }
+
+  @media (min-width: 1300px) {
+    max-width: 1220px;
+    min-height: 150px;
+    padding: 0 40px;
+  }
 }
 
 .page-footer__logo {

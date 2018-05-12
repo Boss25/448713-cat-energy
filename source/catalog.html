@@ -4,16 +4,17 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy: Кэт энерджи Каталог</title>
+  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<header class="page-header">
+<header class="page-header page-header--no-bkgnd">
   <nav class="main-nav">
     <div class="main-nav__wrapper">
       <a href="index.html" class="main-nav__logo invisible">Cat Energy</a>
       <button class="main-nav__burger invisible">Меню</button>
     </div>
-    <ul class="main-nav__list">
+    <ul class="main-nav__list main-nav__list--no-bkgnd">
       <li class="main-nav__item">
         <a href="index.html" class="main-nav__link">Главная</a>
       </li>
@@ -291,13 +292,21 @@
     </ul>
     <p class="catalog__promo">Закажите все<br>и получите чехол для кота в подарок!</p>
   </section>
-  <section class="page-main__section page-main__section--wide contacts contacts--gray">
+  <section class="page-main__section page-main__section--wide contacts">
     <h2 class="contacts__title visually-hidden">Контакты</h2>
     <div class="contacts__promo">
       <p class="contacts__text">Приглашаем к&nbsp;сотрудничеству дилеров!</p>
       <p class="contacts__address">ул. Большая Конюшенная,&nbsp;д.&nbsp;19/8 <span class="contacts__city">Санкт‑Петербург</span></p>
     </div>
-    <a class="contacts__map" href="#"><img src="img/bg-map-mobile@1x.png" width="100%" height=400 alt="Карта"></a>
+    <a class="contacts__map" href="#">
+      <picture>
+        <source srcset="img/bg-map-mobile@1x.png" media="(max-width: 767px)">
+        <source srcset="img/bg-map-tablet@1x.png" media="(min-width: 768px) and (max-width: 1299px)">
+        <source srcset="img/bg-map-desktop@1x.png" media="(min-width: 1300px)">
+        <img srcset="img/bg-map-mobile@1x.png" alt="Карта">
+      </picture>
+    </a>
+    <div class="contacts__google-map visually-hidden"></div>
   </section>
 </main>
 <footer class="page-footer">
@@ -346,5 +355,8 @@
     <a class="page-footer__dev" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
   </div>
 </footer>
+<script src="js/script.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAqiimqAdNWvJFLfiWzlnw83AKsVLQ9yLE&callback=initMap">
+</script>
 </body>
 </html>
