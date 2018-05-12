@@ -28,12 +28,12 @@
     position: absolute;
     width: 570px;
     height: 200px;
-    left: 50%;
+    left: calc(50% - 40px);
     top: 49%;
     padding-left: 35px;
     padding-right: 32px;
     box-sizing: border-box;
-    transform: translateX(calc(-100% - 40px)) translateY(-50%);
+    transform: translateX(-100%) translateY(-50%);
     background-color: #ffffff;
     z-index: 100;
   }

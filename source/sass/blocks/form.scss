@@ -8,6 +8,13 @@
     padding-left: 40px;
     padding-right: 40px;
   }
+
+  @media (min-width: 1300px) {
+    max-width: none;
+    margin-bottom: 82px;
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 .form__promo {
@@ -30,15 +37,34 @@
   }
 }
 
+.form__wrapper {
+  @media (min-width: 1300px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
 .form__wrapper .form__section:first-child {
   margin-bottom: 22px;
 
   @media (min-width: 768px) {
     margin-bottom: 72px;
   }
+
+  @media (min-width: 1300px) {
+    width: 570px;
+    margin: 0;
+  }
 }
 
 .form__section {
+  @media (min-width: 1300px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
   &--border {
     max-width: 450px;
     padding-top: 19px;
@@ -64,6 +90,13 @@
       padding-left: 27px;
       padding-right: 27px;
     }
+
+    @media (min-width: 1300px) {
+      min-width: auto;
+      width: 570px;
+      margin-left: 0;
+      margin-right: 0;
+    }
   }
 
   &--border .form__group {
@@ -77,6 +110,10 @@
       justify-content: space-between;
       margin-bottom: 21px;
     }
+
+    @media (min-width: 1300px) {
+      margin-bottom: 28px;
+    }
   }
 
   &--grid .form__group {
@@ -85,6 +122,10 @@
       flex-shrink: 0;
       margin-bottom: 32px;
     }
+
+    @media (min-width: 1300px) {
+      width: 246px;
+    }
   }
 }
 
@@ -92,16 +133,34 @@
   @media (min-width: 768px) {
     margin-top: 76px;
     margin-bottom: 75px;
+  }
 
-    &--comment {
+  @media (min-width: 1300px) {
+    margin-top: 70px;
+  }
+
+  &--comment {
+    @media (min-width: 768px) {
       margin-top: 66px;
     }
 
-    &--add {
+    @media (min-width: 1300px) {
+      margin-top: 48px;
+    }
+  }
+
+  &--add {
+    @media (min-width: 768px) {
       margin-top: 65px;
       margin-bottom: 57px;
     }
+
+    @media (min-width: 1300px) {
+      margin-top: 68px;
+    }
   }
+
+
 }
 
 .form__group {
@@ -116,6 +175,10 @@
 
   @media (min-width: 768px) {
     margin-bottom: 20px;
+  }
+
+  @media (min-width: 1300px) {
+    width: 570px;
   }
 }
 
@@ -159,6 +222,10 @@
   @media (min-width: 768px) {
     min-height: 174px;
     max-width: 1000px;
+  }
+
+  @media (min-width: 1300px) {
+    max-width: none;
   }
 }
 
@@ -227,6 +294,10 @@
     margin-bottom: 0;
     vertical-align: middle;
   }
+
+  @media (min-width: 1300px) {
+    width: 570px;
+  }
 }
 
 .form__note {
@@ -243,5 +314,10 @@
     display: inline-block;
     margin-left: 62px;
     vertical-align: middle;
+  }
+
+  @media (min-width: 1300px) {
+    margin-left: 80px;
+    vertical-align: baseline;
   }
 }

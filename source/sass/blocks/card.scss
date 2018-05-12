@@ -25,6 +25,10 @@
     border: none;
   }
 
+  @media (min-width: 1300px) {
+    justify-content: flex-start;
+  }
+
   &--more {
     @media (min-width: 768px) {
       background: transparent;
@@ -171,6 +175,10 @@
 
 .card__image {
   display: block;
+
+  @media (min-width: 1300px) {
+    margin-left: -40px;
+  }
 }
 
 .card__description {
