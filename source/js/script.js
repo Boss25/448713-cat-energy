@@ -29,3 +29,8 @@ function initMap() {
     title: 'CatEnergyHere!'
   });
 }
+
+document.addEventListener("DOMContentLoaded", function() {
+  burger.classList.toggle("main-nav__burger--closed");
+  menu.classList.toggle("main-nav__list--show");
+});
