@@ -175,6 +175,14 @@
     &--before {
       margin-right: 475px;
     }
+
+    &:hover {
+      border-bottom-style: solid;
+    }
+
+    &:active {
+      border-bottom: none;
+    }
   }
 }
 
@@ -225,6 +233,15 @@
       height: 8px;
       background-color: #68b738;
       border-radius: 50%;
+    }
+
+    &:hover {
+      box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15);
+    }
+
+    &:active {
+      box-shadow: 0 4px 5px rgba(0, 0, 0, 0.15);
+      border-color: #68b738;
     }
   }
 }

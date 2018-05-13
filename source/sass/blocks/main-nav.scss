@@ -39,6 +39,14 @@
   background-image: url("../img/logo-mobile.svg");
   background-repeat: no-repeat;
 
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
   @media (min-width: 768px) {
     width: 173px;
     height: 58px;
@@ -50,6 +58,7 @@
     height: 60px;
     background-image: url("../img/logo-desktop.svg");
   }
+
 }
 
 .main-nav__burger {
@@ -87,10 +96,10 @@
     min-width: 478px;
   }
 
-  &--no-bkgnd a {
+  &--bkgnd a {
     @media (min-width: 1300px) {
-      color: $title-color;
-      border-bottom-color: #68b738;
+      color: #ffffff;
+      border-bottom-color: #ffffff;
     }
   }
 }
@@ -109,6 +118,14 @@
   text-decoration: none;
   text-align: center;
 
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   @media (min-width: 768px) {
     font-size: $tablet-menu;
     font-weight: 400;
@@ -122,16 +139,11 @@
     line-height: 25px;
     padding-top: 14px;
     padding-bottom: 8px;
-    color: #ffffff;
   }
 
   &--active {
     @media (min-width: 768px) {
       border-bottom: 2px solid #68b738;
-    }
-
-    @media (min-width: 1300px) {
-      border-bottom-color: #ffffff;
     }
   }
 }

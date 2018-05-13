@@ -15,6 +15,14 @@
   text-align: center;
   border: none;
 
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
   &--tall {
     font-size: 14px;
     line-height: 18px;
