@@ -55,8 +55,8 @@
 
   &--first {
     @media (min-width: 768px) {
-      width: 677px;
-      height: 499px;
+      width: 690px;
+      height: 517px;
       padding-left: calc(100% - 677px / 2);
     }
 
@@ -72,10 +72,10 @@
 
     @media (min-width: 768px) {
       display: block;
-      width: 545px;
+      width: 690px;
       height: 517px;
       margin: 0;
-      margin-left: calc(-545px / 2);
+      margin-left: calc(-690px / 2);
     }
 
     @media (min-width: 1300px) {

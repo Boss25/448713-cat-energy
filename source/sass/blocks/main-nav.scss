@@ -2,35 +2,39 @@
   @media (min-width: 768px) {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     min-height: 108px;
+    padding-top: 24px;
+    box-sizing: border-box;
   }
 
   @media (min-width: 1300px) {
     width: 1220px;
     min-height: 167px;
     margin: 0 auto;
+    padding-top: 54px;
   }
 }
 
 .main-nav__wrapper {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   min-width: 280px;
   max-width: 410px;
-  min-height: 65px;
+  min-height: 66px;
   margin: 0 auto;
   padding: 0 20px;
+  padding-top: 13px;
   border-bottom: 1px solid #e6e6e6;
+  box-sizing: border-box;
 
   @media (min-width: 768px) {
+    box-sizing: content-box;
     margin: 0;
     padding: 0;
     min-width: inherit;
     max-width: inherit;
     min-height: auto;
-    border-bottom: unset;
+    border-bottom: none;
   }
 }
 
@@ -65,6 +69,7 @@
 .main-nav__burger {
   display: block;
   margin: 0;
+  margin-top: 10px;
   padding: 0;
   padding-right: 4px;
   width: 22px;
@@ -101,6 +106,7 @@
     display: flex;
     justify-content: space-between;
     margin-top: 0;
+    padding-top: 9px;
     border: none;
   }
 
@@ -150,7 +156,7 @@
   @media (min-width: 1300px) {
     font-size: $desktop-menu;
     line-height: 25px;
-    padding-top: 14px;
+    padding-top: 10px;
     padding-bottom: 8px;
   }
 
