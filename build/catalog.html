@@ -3,7 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>HTML Academy: Кэт энерджи Программа</title>
+  <title>HTML Academy: Кэт энерджи Каталог</title>
+  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -133,104 +134,285 @@
         <a href="index.html" class="main-nav__link">Главная</a>
       </li>
       <li>
-        <a href="catalog.html" class="main-nav__link">Каталог продукции</a>
+        <a class="main-nav__link main-nav__link--active">Каталог продукции</a>
       </li>
       <li>
-        <a class="main-nav__link  main-nav__link--active">Подбор программы</a>
+        <a href="form.html" class="main-nav__link">Подбор программы</a>
       </li>
     </ul>
   </nav>
-  <h1 class="page-header__title page-header__title--no-bkgnd">Подбор программы</h1>
+  <h1 class="page-header__title page-header__title--no-bkgnd">Каталог продукции</h1>
 </header>
 <main class="page-main">
-  <section class="page-main__section">
-    <h2 class="page-main__title visually-hidden">Форма анкеты</h2>
-    <form class="page-main__form form" action="https://echo.htmlacademy.ru" method="post">
-      <p class="form__promo">Заполните анкету и мы подберем программу питания для вашего кота</p>
-      <div class="form__wrapper">
-        <div class="form__section">
-          <h3 class="form__caption visually-hidden">Параметры кота</h3>
-          <div class="form__group">
-            <label class="form__label" for="name">Имя:*</label>
-            <input class="form__input" type="text" id="name" name="name" placeholder="барсик" required>
-          </div>
-          <div class="form__group">
-            <label class="form__label" for="weight">вес (кг):*</label>
-            <input class="form__input" type="text" id="weight" name="weight" placeholder="7" required>
-          </div>
-          <div class="form__group">
-            <label class="form__label" for="age">возраст (лет):</label>
-            <input class="form__input" type="text" id="age" name="age" placeholder="7">
-          </div>
+  <section class="page-main__section catalog">
+    <h2 class="catalog__title visually-hidden">Каталог</h2>
+    <ul class="catalog__list catalog__list--grid">
+      <li class="catalog__item card">
+        <picture>
+          <source media="(min-width: 1300px)" srcset="img/chicken-small-desktop@1x.png, img/chicken-small-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="img/chicken-small-tablet@1x.png, img/chicken-small-tablet@2x.png 2x">
+          <img class="card__image" src="img/chicken-small-mobile@1x.jpg" srcset="img/chicken-small-mobile@2x.jpg 2x">
+        </picture>
+        <div class="card__description">
+          <h3 class="card__name">Cat Energy PRO 500 г</h3>
+          <table class="card__attributes">
+            <tbody>
+            <tr>
+              <td class="card__property">Объем</td>
+              <td class="card__value">500 г</td>
+            </tr>
+            <tr>
+              <td class="card__property">Вкус</td>
+              <td class="card__value">Курица</td>
+            </tr>
+            <tr>
+              <td class="card__property">Цена</td>
+              <td class="card__value">700 Р.</td>
+            </tr>
+            </tbody>
+          </table>
         </div>
-        <div class="form__section form__section--border">
-          <p class="form__caption visually-hidden">программа</p>
-          <div class="form__group">
-            <input class="form__radio visually-hidden" id="lite" type="radio" name="program" tabindex="0" checked>
-            <label class="form__label" for="lite">Похудение</label>
-          </div>
-          <div class="form__group">
-            <input class="form__radio visually-hidden" id="pump" type="radio" name="program" tabindex="0">
-            <label class="form__label" for="pump">Набор массы</label>
-          </div>
-          <div class="form__group">
-            <input class="form__radio visually-hidden" id="undefined" type="radio" name="program" tabindex="0">
-            <label class="form__label" for="undefined">Не знаю (нужен ваш совет)</label>
-          </div>
+        <a href="#" class="card__action button">Заказать</a>
+      </li>
+      <li class="catalog__item card">
+        <picture>
+          <source srcset="img/chicken-big-desktop@1x.png, img/chicken-big-desktop@2x.png 2x" media="(min-width: 1300px)">
+          <source srcset="img/chicken-big-tablet@1x.png, img/chicken-big-tablet@2x.png 2x" media="(min-width: 768px)">
+          <img class="card__image" src="img/chicken-big-mobile@1x.jpg" srcset="img/chicken-big-mobile@2x.jpg 2x">
+        </picture>
+        <div class="card__description">
+          <h3 class="card__name">Cat Energy PRO 1000 г</h3>
+          <table class="card__attributes">
+            <tbody>
+            <tr>
+              <td class="card__property">Объем</td>
+              <td class="card__value">1000 г</td>
+            </tr>
+            <tr>
+              <td class="card__property">Вкус</td>
+              <td class="card__value">Курица</td>
+            </tr>
+            <tr>
+              <td class="card__property">Цена</td>
+              <td class="card__value">1000 Р.</td>
+            </tr>
+            </tbody>
+          </table>
         </div>
-      </div>
-      <h3 class="form__caption crossed-title"><span class="crossed-title__text crossed-title__text--shift crossed-title__text--long">Контактные данные (владельца кота)</span></h3>
-      <div class="form__section">
-        <div class="form__group">
-          <label class="form__label" for="e-mail">E-mail:*</label>
-          <input class="form__input form__input--e-mail" type="text" id="e-mail" name="e-mail" placeholder="kuklachev@gmail.com">
-          <svg class="form__icon-mail" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 17 13" style="enable-background:new 0 0 17 13;" xml:space="preserve">
-            <path d="M15.6,11.6H1.4V5.8H0V13h17V5.8h-1.4V11.6z M0,0v2.3l8.5,7.1L17,2.3V0H0z M15.6,1.6L8.5,7.5L1.4,1.6V1.4h14.2L15.6,1.6z"/>
-          </svg>
+        <a href="#" class="card__action button">Заказать</a>
+      </li>
+      <li class="catalog__item card">
+        <picture>
+          <source srcset="img/fish-small-desktop@1x.png, img/fish-small-desktop@2x.png 2x" media="(min-width: 1300px)">
+          <source srcset="img/fish-small-tablet@1x.png, img/fish-small-tablet@2x.png 2x" media="(min-width: 768px)">
+          <img class="card__image" src="img/fish-small-mobile@1x.jpg" srcset="img/fish-small-mobile@2x.jpg 2x">
+        </picture>
+        <div class="card__description">
+          <h3 class="card__name">Cat Energy PRO 500 г</h3>
+          <table class="card__attributes">
+            <tbody>
+            <tr>
+              <td class="card__property">Объем</td>
+              <td class="card__value">500 г</td>
+            </tr>
+            <tr>
+              <td class="card__property">Вкус</td>
+              <td class="card__value">Рыба</td>
+            </tr>
+            <tr>
+              <td class="card__property">Цена</td>
+              <td class="card__value">700 Р.</td>
+            </tr>
+            </tbody>
+          </table>
         </div>
-        <div class="form__group">
-          <label class="form__label" for="phone">Телефон:*</label>
-          <input class="form__input form__input--phone" type="text" id="phone" name="phone" placeholder="8 (960) 900-60-90">
-          <svg class="form__icon-phone"version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 20 20" style="enable-background:new 0 0 20 20;" xml:space="preserve">
-            <path d="M17.9,9.4H9.4v1.2h8.5l-2.1,2.1l0.9,0.9l3.1-3.1c0.2-0.2,0.2-0.6,0-0.9l-3.1-3.1l-0.9,0.9L17.9,9.4z"/>
-            <path d="M8.1,19.4v-6.2c0-0.3-0.3-0.6-0.6-0.6H4.4l0,0H3.1l0,0c0,0.7,0.6,1.2,1.2,1.2h2.5v5H3.1c-1,0.1-1.8-0.7-1.9-1.7
-            c0-0.1,0-0.1,0-0.2V3.1c0-1,0.8-1.8,1.7-1.8c0.1,0,0.1,0,0.2,0h3.7v5H4.4c-0.7,0-1.2,0.6-1.2,1.2h4.4c0.3,0,0.6-0.3,0.6-0.6V0.6
-            C8.1,0.3,7.8,0,7.5,0H3.1C1.5-0.1,0.1,1.2,0,2.9C0,3,0,3.1,0,3.1v13.7c-0.1,1.7,1.2,3.1,2.9,3.1c0.1,0,0.2,0,0.2,0h4.4
-            C7.8,20,8.1,19.7,8.1,19.4z"/>
-          </svg>
+        <a href="#" class="card__action button">Заказать</a>
+      </li>
+      <li class="catalog__item card">
+        <picture>
+          <source srcset="img/fish-big-desktop@1x.png, img/fish-big-desktop@2x.png 2x" media="(min-width: 1300px)">
+          <source srcset="img/fish-big-tablet@1x.png, img/fish-big-tablet@2x.png 2x" media="(min-width: 768px)">
+          <img class="card__image" src="img/fish-big-mobile@1x.jpg" srcset="img/fish-big-mobile@2x.jpg 2x">
+        </picture>
+        <div class="card__description">
+          <h3 class="card__name">Cat Energy PRO 1000 г</h3>
+          <table class="card__attributes">
+            <tbody>
+            <tr>
+              <td class="card__property">Объем</td>
+              <td class="card__value">1000 г</td>
+            </tr>
+            <tr>
+              <td class="card__property">Вкус</td>
+              <td class="card__value">Рыба</td>
+            </tr>
+            <tr>
+              <td class="card__property">Цена</td>
+              <td class="card__value">1000 Р.</td>
+            </tr>
+            </tbody>
+          </table>
         </div>
-      </div>
-      <h3 class="form__caption form__caption--comment crossed-title"><span class="crossed-title__text crossed-title__text--shift">Комментарий</span></h3>
-      <div class="form__section">
-        <textarea class="form__text" id="comment" name="comment" placeholder="Расскажите обо всех повадках кота" ></textarea>
-      </div>
-      <h3 class="form__caption form__caption--add crossed-title"><span class="crossed-title__text crossed-title__text--shift">Дополнительно</span></h3>
-      <div class="form__section form__section--grid">
-        <div class="form__group">
-          <input class="form__checkbox visually-hidden" id="add1" name="add" type="checkbox" tabindex="0" checked>
-          <label class="form__label" for="add1">Сахарозаменитель</label>
+        <a href="#" class="card__action button">Заказать</a>
+      </li>
+      <li class="catalog__item card">
+        <picture>
+          <source srcset="img/buckwheat-small-desktop@1x.png, img/buckwheat-small-desktop@2x.png 2x" media="(min-width: 1300px)">
+          <source srcset="img/buckwheat-small-tablet@1x.png, img/buckwheat-small-tablet@2x.png 2x" media="(min-width: 768px)">
+          <img class="card__image" src="img/buckwheat-small-mobile@1x.jpg"  srcset="img/buckwheat-small-mobile@2x.jpg 2x">
+        </picture>
+        <div class="card__description">
+          <h3 class="card__name">Cat Energy Slim 500 г</h3>
+          <table class="card__attributes">
+            <tbody>
+            <tr>
+              <td class="card__property">Объем</td>
+              <td class="card__value">1000 г</td>
+            </tr>
+            <tr>
+              <td class="card__property">Вкус</td>
+              <td class="card__value">Гречка</td>
+            </tr>
+            <tr>
+              <td class="card__property">Цена</td>
+              <td class="card__value">400 Р.</td>
+            </tr>
+            </tbody>
+          </table>
         </div>
-        <div class="form__group">
-          <input class="form__checkbox visually-hidden" id="add2" name="add" type="checkbox" tabindex="0">
-          <label class="form__label" for="add2">Питьевая вода</label>
+        <a href="#" class="card__action button">Заказать</a>
+      </li>
+      <li class="catalog__item card">
+        <picture>
+          <source srcset="img/buckwheat-big-desktop@1x.png, img/buckwheat-big-desktop@2x.png 2x" media="(min-width: 1300px)">
+          <source srcset="img/buckwheat-big-tablet@1x.png, img/buckwheat-big-tablet@2x.png 2x" media="(min-width: 768px)">
+          <img class="card__image" src="img/buckwheat-big-mobile@1x.jpg" srcset="img/buckwheat-big-mobile@2x.jpg 2x">
+        </picture>
+        <div class="card__description">
+          <h3 class="card__name">Cat Energy Slim 1000 г</h3>
+          <table class="card__attributes">
+            <tbody>
+            <tr>
+              <td class="card__property">Объем</td>
+              <td class="card__value">1000 г</td>
+            </tr>
+            <tr>
+              <td class="card__property">Вкус</td>
+              <td class="card__value">Гречка</td>
+            </tr>
+            <tr>
+              <td class="card__property">Цена</td>
+              <td class="card__value">700 Р.</td>
+            </tr>
+            </tbody>
+          </table>
         </div>
-        <div class="form__group">
-          <input class="form__checkbox visually-hidden" id="add3" name="add" type="checkbox" tabindex="0">
-          <label class="form__label" for="add3">Молоко</label>
+        <a href="#" class="card__action button">Заказать</a>
+      </li>
+      <li class="catalog__item card">
+        <picture>
+          <source srcset="img/rice-small-desktop@1x.png, img/rice-small-desktop@2x.png 2x" media="(min-width: 1300px)">
+          <source srcset="img/rice-small-tablet@1x.png, img/rice-small-tablet@2x.png 2x" media="(min-width: 768px)">
+          <img class="card__image" src="img/rice-small-mobile@1x.jpg" srcset="img/rice-small-mobile@2x.jpg 2x">
+        </picture>
+        <div class="card__description">
+          <h3 class="card__name">Cat Energy Slim 500 г</h3>
+          <table class="card__attributes">
+            <tbody>
+            <tr>
+              <td class="card__property">Объем</td>
+              <td class="card__value">500 г</td>
+            </tr>
+            <tr>
+              <td class="card__property">Вкус</td>
+              <td class="card__value">Рис</td>
+            </tr>
+            <tr>
+              <td class="card__property">Цена</td>
+              <td class="card__value">500 Р.</td>
+            </tr>
+            </tbody>
+          </table>
         </div>
-        <div class="form__group">
-          <input class="form__checkbox visually-hidden" id="add4" name="add" type="checkbox" tabindex="0">
-          <label class="form__label" for="add4">Витамины</label>
+        <a href="#" class="card__action button">Заказать</a>
+      </li>
+      <li class="catalog__item card card--more">
+        <h3 class="card__name">Показать еще 100500 товаров</h3>
+        <p class="card__promo">На самом деле вкусов гораздо больше!</p>
+        <a href="#" class="card__action button button--gray">Показать все</a>
+      </li>
+    </ul>
+  </section>
+  <section class="page-main__section catalog">
+    <h2 class="catalog__title crossed-title">
+      <span class="crossed-title__text">Дополнительные товары</span>
+    </h2>
+    <ul class="catalog__list">
+      <li class="catalog__item card card--additional">
+        <div class="card__description">
+          <h3 class="card__name">Сахарозаменитель</h3>
+          <table class="card__attributes">
+            <tbody>
+            <tr>
+              <td class="card__property">1 упаковка (100 г)</td>
+              <td class="card__value">200 Р.</td>
+            </tr>
+            </tbody>
+          </table>
         </div>
-      </div>
-      <button class="form__submit button button--large">отправить заявку</button><p class="form__note">* — Обязательные поля</p>
-    </form>
+        <a href="#" class="card__action button">Заказать</a>
+      </li>
+      <li class="catalog__item card card--additional">
+        <div class="card__description">
+          <h3 class="card__name">Питьевая вода</h3>
+          <table class="card__attributes">
+            <tbody>
+            <tr>
+              <td class="card__property">5 литров</td>
+              <td class="card__value">50 Р.</td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+        <a href="#" class="card__action button">Заказать</a>
+      </li>
+      <li class="catalog__item card card--additional">
+        <div class="card__description">
+          <h3 class="card__name">Молоко</h3>
+          <table class="card__attributes">
+            <tbody>
+            <tr>
+              <td class="card__property">1 литр</td>
+              <td class="card__value">100 Р.</td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+        <a href="#" class="card__action button">Заказать</a>
+      </li>
+      <li class="catalog__item card card--additional">
+        <div class="card__description">
+          <h3 class="card__name">Витамины</h3>
+          <table class="card__attributes">
+            <tbody>
+            <tr>
+              <td class="card__property">1 упаковка (30 г)</td>
+              <td class="card__value">300 Р.</td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+        <a href="#" class="card__action button">Заказать</a>
+      </li>
+    </ul>
+    <p class="catalog__promo">Закажите все<br>и получите чехол для кота в подарок!</p>
   </section>
   <section class="page-main__section page-main__section--wide contacts contacts--gray">
     <h2 class="contacts__title visually-hidden">Контакты</h2>
     <div class="contacts__promo">
       <p class="contacts__text">Приглашаем к&nbsp;сотрудничеству дилеров!</p>
-      <p class="contacts__address">ул. Большая Конюшенная,&nbsp;д.&nbsp;19/8 <span class="contacts__city">Санкт‑Петербург</span></p>
+      <p class="contacts__address">ул. Большая Конюшенная,&nbsp;д.&nbsp;19/8 <span class="contacts__city">Санкт‑Петербург</span>
+      </p>
     </div>
     <a class="contacts__map" href="#">
       <picture>
@@ -260,7 +442,7 @@
       <li class="socials__item">
         <a href="https://www.instagram.com/" class="socials__link socials__link--instagram invisible">instagram
           <svg class="page-footer__icon" width="23" height="23">
-            <use xlink:href="#insta-mobile"></use>
+            <use xlink:href="#insta"></use>
           </svg>
         </a>
       </li>
