@@ -18,7 +18,6 @@
 
 .socials__link {
   display: block;
-  background-color: #cd0000;
 
   &--vk {
     width: 22px;
@@ -59,4 +58,16 @@
       padding-right: 0;
     }
   }
+}
+
+.socials__link .page-footer__icon {
+  fill: #666666;
+}
+
+.socials__link:hover .page-footer__icon {
+  fill: #68b738;
+}
+
+.socials__link:active .page-footer__icon {
+  opacity: 0.3;
 }

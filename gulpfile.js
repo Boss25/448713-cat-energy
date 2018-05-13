@@ -9,7 +9,10 @@ var minify = require("gulp-csso");
 var imagemin = require("gulp-imagemin");
 var rename = require("gulp-rename");
 var webp = require("gulp-webp");
+var uglify = require('gulp-uglify');
+var pump = require('pump');
 var server = require("browser-sync").create();
+var del = require("del");
 var run = require("run-sequence");
 
 gulp.task("style", function() {
@@ -37,9 +40,19 @@ gulp.task("images", function () {
 });
 
 gulp.task("webp", function () {
-  return gulp.srv("source/img/**/*.{png,jpg}")
+  return gulp.src("source/img/**/*.{png,jpg}")
     .pipe(webp({quality: 90}))
     .pipe(gulp.dest("source/img"));
+});
+
+gulp.task('compress', function (cb) {
+  pump([
+      gulp.src("source/js/*.js"),
+      uglify(),
+      gulp.dest("build/js")
+    ],
+    cb
+  );
 });
 
 gulp.task("serve", ["style"], function() {
@@ -54,6 +67,14 @@ gulp.task("serve", ["style"], function() {
   gulp.watch("source/*.html").on("change", server.reload);
 });
 
+gulp.task("copyhtml", function () {
+  return gulp.src([
+    "source/*.html"], {
+    base: "source"
+  })
+    .pipe(gulp.dest("build"));
+});
+
 gulp.task("copy", function () {
   return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
@@ -65,8 +86,12 @@ gulp.task("copy", function () {
     .pipe(gulp.dest("build"));
 });
 
+gulp.task("clean", function () {
+  return del("build");
+});
+
 gulp.task("build", function (done) {
-  run("style", done);
+  run("copy", "style", done);
 });
 
 
