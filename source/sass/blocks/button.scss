@@ -58,6 +58,14 @@
   &--gray {
     color: $text-color;
     background-color: #f2f2f2;
+
+    &:hover {
+      background-color: #ebebeb;
+    }
+
+    &:active {
+      color: rgba(68, 68, 68, 0.3);
+    }
   }
 
   @media (min-width: 768px) {

@@ -1,6 +1,13 @@
 
 var googleMap = document.querySelector('.contacts__google-map');
 var mapLink = document.querySelector('.contacts__map');
+var burger =  document.querySelector('.main-nav__burger');
+var menu =  document.querySelector('.main-nav__list');
+
+burger.addEventListener('click', function (evt) {
+  burger.classList.toggle("main-nav__burger--closed");
+  menu.classList.toggle("main-nav__list--show");
+});
 
 googleMap.classList.toggle("visually-hidden");
 mapLink.classList.toggle("visually-hidden");
