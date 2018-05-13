@@ -50,7 +50,7 @@
     padding-left: 52px;
 
     &::before {
-      left: unset;
+      left: auto;
       right: 60px;
       top: 91px;
       width: 200px;
@@ -69,7 +69,7 @@
     }
 
     &::before {
-      right: unset;
+      right: auto;
       top: 47px;
       left: 52px;
       width: 100px;
@@ -88,7 +88,7 @@
 
     @media (min-width: 768px) {
       &::after {
-        left: unset;
+        left: auto;
         right: 92px;
         top: 80px;
         width: 140px;
@@ -98,7 +98,7 @@
 
     @media (min-width: 1300px) {
       &::after {
-        right: unset;
+        right: auto;
         left: 66px;
         top: 41px;
         width: 70px;
@@ -120,7 +120,7 @@
       padding-right: 315px;
 
       &::after {
-        left: unset;
+        left: auto;
         right: 28px;
         top: 135px;
         width: 268px;
@@ -132,7 +132,7 @@
       padding-right: 50px;
 
       &::after {
-        right: unset;
+        right: auto;
         left: 34px;
         top: 69px;
         width: 134px;
