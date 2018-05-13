@@ -1,3 +1,4 @@
+"use strict"
 
 var googleMap = document.querySelector('.contacts__google-map');
 var mapLink = document.querySelector('.contacts__map');
