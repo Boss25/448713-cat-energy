@@ -1,13 +1,13 @@
 .socials {
   display: flex;
   width: 100%;
-  min-height: 62px;
+  min-height: 64px;
 
   @include list-default;
-  align-items: center;
+  padding-top: 22px;
   justify-content: center;
   border-top: 1px solid #d9d9d9;
-
+  box-sizing: border-box;
 
   @media (min-width: 768px) {
     width: 125px;
@@ -23,12 +23,14 @@
   &--vk {
     width: 22px;
     height: 12px;
+    margin-top: 5px;
     margin-right: 37px;
   }
 
   &--instagram {
     width: 16px;
     height: 16px;
+    margin-top: 3px;
     margin-right: 37px;
   }
 
