@@ -60,7 +60,6 @@
     height: 60px;
     background-image: url("../img/logo-desktop.svg");
   }
-
 }
 
 .main-nav__burger {
@@ -74,7 +73,7 @@
   box-sizing: border-box;
   background-color: unset;
   background-image: url("../img/icon-close.svg");
-  background-repeat: no-repeat ;
+  background-repeat: no-repeat;
 
   &--closed {
     width: 24px;
@@ -87,8 +86,8 @@
 }
 
 .main-nav__list {
-  display: none;
   @include list-default;
+  display: none;
   width: 100%;
   margin-top: -1px;
   border-top: 1px solid #e6e6e6;

@@ -162,7 +162,7 @@
 }
 
 .form__group {
-  position:relative;
+  position: relative;
   display: flex;
   align-items: baseline;
   max-width: 100%;
@@ -360,7 +360,7 @@
 }
 
 .form__radio:focus + .form__label,
-.form__checkbox:focus + .form__label{
+.form__checkbox:focus + .form__label {
   color: rgba(34, 34, 34, 0.7);
 }
 
