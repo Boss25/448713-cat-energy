@@ -3,6 +3,24 @@
 
   @media (min-width: 768px) {
     padding: 0 30px;
+    max-width: 940px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: 1300px) {
+    min-width: 1300px;
+    max-width: 1440px;
+    padding: 0;
+    background-image: url("../img/index-can-desktop@1x.png"),
+      url("../img/index-background-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: calc(50% + 116px) calc(50% + 3px), top right;
+  }
+
+  &--no-bkgnd {
+    @media (min-width: 1300px) {
+      background: none;
+    }
   }
 }
 
@@ -24,15 +42,23 @@
     margin-bottom: 0;
     padding-top: 34px;
     padding-left: 88px;
-    background: url("../img/index-can-mobile@1x.png");
+    background: url("../img/index-can-tablet@1x.jpg");
     background-repeat: no-repeat;
-    background-position: 80px bottom;
-    background-size: 630px 609px;
+    background-position: center bottom;
+  }
+
+  @media (min-width: 1300px) {
+    min-height: 609px;
+    max-width: 1060px;
+    margin: 0 auto;
+    padding-top: 57px;
+    padding-left: 0;
+    background: none;
   }
 }
 
 .page-header__title {
-  font-family: $family-oswald;
+  font-family: $family-primary;
   font-size: $mobile-caption;
   line-height: 36px;
   font-weight: 400;
@@ -42,6 +68,17 @@
   margin-bottom: 25px;
   text-decoration: none;
   text-align: center;
+
+  @media (min-width: 768px) {
+    font-size: $tablet-caption;
+    line-height: 60px;
+    color: $title-color;
+    width: 430px;
+    max-width: inherit;
+    margin: 0;
+    margin-bottom: 40px;
+    text-align: left;
+  }
 
   &--no-bkgnd {
     line-height: 60px;
@@ -54,18 +91,8 @@
     padding-left: 20px;
     padding-bottom: 28px;
     text-align: left;
-  }
 
-  @media (min-width: 768px) {
-    font-size: $tablet-caption;
-    line-height: 60px;
-    color: $title-color;
-    width: 430px;
-    margin: 0;
-    margin-bottom: 40px;
-    text-align: left;
-
-    &--no-bkgnd {
+    @media (min-width: 768px) {
       width: auto;
       max-width: 1000px;
       margin-bottom: 0;
@@ -74,11 +101,18 @@
       padding-left: 0;
       padding-right: 0;
     }
+
+    @media (min-width: 1300px) {
+      max-width: none;
+      width: 1220px;
+      margin: 0 auto;
+      padding-top: 23px;
+    }
   }
 }
 
 .page-header__promo {
-  font-family: $family-oswald;
+  font-family: $family-primary;
   font-size: 14px;
   line-height: 14px;
   font-weight: 400;
@@ -97,5 +131,15 @@
     margin: 0;
     margin-bottom: 47px;
     text-align: left;
+  }
+
+  @media (min-width: 1300px) {
+    margin-bottom: 52px;
+  }
+}
+
+.page-header__link {
+  @media (min-width: 768px) {
+    width: 245px;
   }
 }

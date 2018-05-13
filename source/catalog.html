@@ -4,16 +4,17 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy: Кэт энерджи Каталог</title>
+  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<header class="page-header">
+<header class="page-header page-header--no-bkgnd">
   <nav class="main-nav">
     <div class="main-nav__wrapper">
       <a href="index.html" class="main-nav__logo invisible">Cat Energy</a>
       <button class="main-nav__burger invisible">Меню</button>
     </div>
-    <ul class="main-nav__list">
+    <ul class="main-nav__list main-nav__list--no-bkgnd">
       <li class="main-nav__item">
         <a href="index.html" class="main-nav__link">Главная</a>
       </li>
@@ -34,7 +35,8 @@
       <li class="catalog__item card">
         <picture>
           <source srcset="img/chicken-small-mobile@1x.jpg" media="(max-width: 767px)">
-          <source srcset="img/catalog-1-tablet.png" media="(min-width: 450px)">
+          <source srcset="img/chicken-small-tablet@1x.png" media="(min-width: 768px) and (max-width: 1299px)">
+          <source srcset="img/chicken-small-desktop@1x.png" media="(min-width: 1300px)">
           <img class="card__image" srcset="img/chicken-small-mobile@1x.jpg">
         </picture>
         <div class="card__description">
@@ -61,7 +63,8 @@
       <li class="catalog__item card">
         <picture>
           <source srcset="img/chicken-big-mobile@1x.jpg" media="(max-width: 767px)">
-          <source srcset="img/catalog-2-tablet.png" media="(min-width: 450px)">
+          <source srcset="img/chicken-big-tablet@1x.png" media="(min-width: 768px) and (max-width: 1299px)">
+          <source srcset="img/chicken-big-desktop@1x.png" media="(min-width: 1300px)">
           <img class="card__image" srcset="img/chicken-big-mobile@1x.jpg">
         </picture>
         <div class="card__description">
@@ -87,9 +90,10 @@
       </li>
       <li class="catalog__item card">
         <picture>
-          <source srcset="img/chicken-big-mobile@1x.jpg" media="(max-width: 767px)">
-          <source srcset="img/catalog-2-tablet.png" media="(min-width: 450px)">
-          <img class="card__image" srcset="img/chicken-big-mobile@1x.jpg">
+          <source srcset="img/fish-small-mobile@1x.jpg" media="(max-width: 767px)">
+          <source srcset="img/fish-small-tablet@1x.png" media="(min-width: 768px) and (max-width: 1299px)">
+          <source srcset="img/fish-small-desktop@1x.png" media="(min-width: 1300px)">
+          <img class="card__image" srcset="img/fish-small-mobile@1x.jpg">
         </picture>
         <div class="card__description">
           <h3 class="card__name">Cat Energy PRO 500 г</h3>
@@ -114,9 +118,10 @@
       </li>
       <li class="catalog__item card">
         <picture>
-          <source srcset="img/chicken-big-mobile@1x.jpg" media="(max-width: 767px)">
-          <source srcset="img/catalog-2-tablet.png" media="(min-width: 450px)">
-          <img class="card__image" srcset="img/chicken-big-mobile@1x.jpg">
+          <source srcset="img/fish-big-mobile@1x.jpg" media="(max-width: 767px)">
+          <source srcset="img/fish-big-tablet@1x.png" media="(min-width: 768px) and (max-width: 1299px)">
+          <source srcset="img/fish-big-desktop@1x.png" media="(min-width: 1300px)">
+          <img class="card__image" srcset="img/fish-big-mobile@1x.jpg">
         </picture>
         <div class="card__description">
           <h3 class="card__name">Cat Energy PRO 1000 г</h3>
@@ -141,9 +146,10 @@
       </li>
       <li class="catalog__item card">
         <picture>
-          <source srcset="img/chicken-big-mobile@1x.jpg" media="(max-width: 767px)">
-          <source srcset="img/catalog-2-tablet.png" media="(min-width: 450px)">
-          <img class="card__image" srcset="img/chicken-big-mobile@1x.jpg">
+          <source srcset="img/buckwheat-small-mobile@1x.jpg" media="(max-width: 767px)">
+          <source srcset="img/buckwheat-small-tablet@1x.png" media="(min-width: 768px) and (max-width: 1299px)">
+          <source srcset="img/buckwheat-small-desktop@1x.png" media="(min-width: 1300px)">
+          <img class="card__image" srcset="img/buckweat-small-mobile@1x.jpg">
         </picture>
         <div class="card__description">
           <h3 class="card__name">Cat Energy Slim 500 г</h3>
@@ -168,9 +174,10 @@
       </li>
       <li class="catalog__item card">
         <picture>
-          <source srcset="img/chicken-big-mobile@1x.jpg" media="(max-width: 767px)">
-          <source srcset="img/catalog-2-tablet.png" media="(min-width: 450px)">
-          <img class="card__image" srcset="img/chicken-big-mobile@1x.jpg">
+          <source srcset="img/buckwheat-big-mobile@1x.jpg" media="(max-width: 767px)">
+          <source srcset="img/buckwheat-big-tablet@1x.png" media="(min-width: 768px) and (max-width: 1299px)">
+          <source srcset="img/buckwheat-big-desktop@1x.png" media="(min-width: 1300px)">
+          <img class="card__image" srcset="img/buckwheat-big-mobile@1x.jpg">
         </picture>
         <div class="card__description">
           <h3 class="card__name">Cat Energy Slim 1000 г</h3>
@@ -195,9 +202,10 @@
       </li>
       <li class="catalog__item card">
         <picture>
-          <source srcset="img/chicken-big-mobile@1x.jpg" media="(max-width: 767px)">
-          <source srcset="img/catalog-2-tablet.png" media="(min-width: 450px)">
-          <img class="card__image" srcset="img/chicken-big-mobile@1x.jpg">
+          <source srcset="img/rice-small-mobile@1x.jpg" media="(max-width: 767px)">
+          <source srcset="img/rice-small-tablet@1x.png" media="(min-width: 768px) and (max-width: 1299px)">
+          <source srcset="img/rice-small-desktop@1x.png" media="(min-width: 1300px)">
+          <img class="card__image" srcset="img/rice-small-mobile@1x.jpg">
         </picture>
         <div class="card__description">
           <h3 class="card__name">Cat Energy Slim 500 г</h3>
@@ -220,14 +228,14 @@
         </div>
         <a href="#" class="card__action button">Заказать</a>
       </li>
-      <li class="catalog__item card">
-        <h3 class="card__name card__name--add">Показать еще 100500 товаров</h3>
+      <li class="catalog__item card card--more">
+        <h3 class="card__name">Показать еще 100500 товаров</h3>
         <p class="card__promo">На самом деле вкусов гораздо больше!</p>
         <a href="#" class="card__action button button--gray">Показать все</a>
       </li>
     </ul>
   </section>
-  <section class="page-main__section page-main__section--wide catalog">
+  <section class="page-main__section catalog">
     <h2 class="catalog__title crossed-title">
       <span class="crossed-title__text">Дополнительные товары</span>
     </h2>
@@ -291,20 +299,27 @@
     </ul>
     <p class="catalog__promo">Закажите все<br>и получите чехол для кота в подарок!</p>
   </section>
-  <section class="page-main__section contacts contacts--gray">
+  <section class="page-main__section page-main__section--wide contacts">
     <h2 class="contacts__title visually-hidden">Контакты</h2>
     <div class="contacts__promo">
       <p class="contacts__text">Приглашаем к&nbsp;сотрудничеству дилеров!</p>
-      <p class="contacts__address">ул. Большая Конюшенная,&nbsp;д.&nbsp;19/8 <span class="contacts__city">Санкт‑Петербург</span></p>
+      <p class="contacts__address">ул. Большая Конюшенная,&nbsp;д.&nbsp;19/8 <span class="contacts__city">Санкт‑Петербург</span>
+      </p>
     </div>
-    <a class="contacts__map" href="#"><img src="img/bg-map-mobile@1x.png" width="100%" height=400 alt="Карта"></a>
+    <a class="contacts__map" href="#">
+      <picture>
+        <source srcset="img/bg-map-mobile@1x.png" media="(max-width: 767px)">
+        <source srcset="img/bg-map-tablet@1x.png" media="(min-width: 768px) and (max-width: 1299px)">
+        <source srcset="img/bg-map-desktop@1x.png" media="(min-width: 1300px)">
+        <img srcset="img/bg-map-mobile@1x.png" alt="Карта">
+      </picture>
+    </a>
+    <div class="contacts__google-map visually-hidden"></div>
   </section>
 </main>
 <footer class="page-footer">
   <div class="page-footer__wrapper">
     <a href="form.html" class="page-footer__logo invisible">
-      <?xml version="1.0" encoding="utf-8"?>
-      <!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0) -->
       <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width=128 height=24 viewBox="0 0 127.8 23.4" style="enable-background:new 0 0 127.8 23.4;" xml:space="preserve">
         <style type="text/css">
           .st0 {
@@ -348,5 +363,9 @@
     <a class="page-footer__dev" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
   </div>
 </footer>
+<script src="js/picturefill.js"></script>
+<script src="js/script.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAqiimqAdNWvJFLfiWzlnw83AKsVLQ9yLE&callback=initMap">
+</script>
 </body>
 </html>
