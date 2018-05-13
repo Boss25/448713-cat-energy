@@ -83,17 +83,18 @@
 .page-footer__dev svg {
   margin-top: -11px;
   margin-right: -7px;
+  fill: #666600;
 }
 
-.page-footer__dev .dev-st0 {
+.page-footer__dev .page-footer__dev-logo {
   fill: #666666;
 }
 
-.page-footer__dev:hover .dev-st0 {
+.page-footer__dev:hover .page-footer__dev-logo {
   fill: #68b738;
 }
 
-.page-footer__dev:active .dev-st0,
+.page-footer__dev:active .page-footer__dev-logo,
 .page-footer__dev:active span {
   opacity: 0.3;
 }
