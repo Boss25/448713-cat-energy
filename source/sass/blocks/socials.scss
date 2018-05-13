@@ -4,7 +4,7 @@
   min-height: 64px;
 
   @include list-default;
-  padding-top: 22px;
+  padding-top: 21px;
   justify-content: center;
   border-top: 1px solid #d9d9d9;
   box-sizing: border-box;
@@ -30,13 +30,13 @@
     width: 16px;
     height: 16px;
     margin-top: 3px;
-    margin-right: 37px;
+    margin-right: 40px;
   }
 
   &--facebook {
-    width: 10px;
+    width: 11px;
     height: 21px;
-    padding-right: 12px;
+    margin-right: 10px;
   }
 
   @media (min-width: 768px) {
@@ -55,8 +55,38 @@
     &--facebook {
       width: 14px;
       height: 30px;
-      padding-right: 0;
+      margin-right: 0;
     }
+  }
+}
+
+.socials__link--vk .page-footer__icon {
+  width: 22px;
+  height: 12px;
+
+  @media (min-width: 768px) {
+    width: 30px;
+    height: 18px;
+  }
+}
+
+.socials__link--instagram .page-footer__icon {
+  width: 16px;
+  height: 16px;
+
+  @media (min-width: 768px) {
+    width: 23px;
+    height: 23px;
+  }
+}
+
+.socials__link--facebook .page-footer__icon {
+  width: 10px;
+  height: 21px;
+
+  @media (min-width: 768px) {
+    width: 14px;
+    height: 30px;
   }
 }
 
