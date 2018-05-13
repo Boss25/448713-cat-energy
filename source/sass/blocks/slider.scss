@@ -7,7 +7,7 @@
 
   @media (min-width: 1300px) {
     flex-grow: 1;
-    min-height: 652px;
+    min-height: 633px;
     padding-left: 55px;
   }
 }
@@ -16,6 +16,7 @@
   @media (min-width: 768px) {
     width: 50%;
     overflow: hidden;
+    min-height: 633px;
   }
 
   &--left {
@@ -38,6 +39,7 @@
     @media (min-width: 1300px) {
       /*width: calc(100% - 365px);*/
       width: auto;
+      min-height: 652px;
       flex-grow: 1;
       background: linear-gradient(180deg, #ffffff 190px, #eaeaea 190px, #eaeaea 100%);
     }

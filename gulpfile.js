@@ -5,6 +5,7 @@ var sass = require("gulp-sass");
 var plumber = require("gulp-plumber");
 var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
+var minify = require("gulp-csso");
 var server = require("browser-sync").create();
 
 gulp.task("style", function() {
