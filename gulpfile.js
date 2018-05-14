@@ -43,7 +43,7 @@ gulp.task("webp", function () {
     .pipe(gulp.dest("build/img"));
 });
 
-gulp.task('compress', function (cb) {
+gulp.task("compress-js", function (cb) {
   pump([
       gulp.src("source/js/*.js"),
       uglify(),
@@ -66,7 +66,7 @@ gulp.task("serve", ["style"], function() {
 });
 
 
-gulp.task("copy", function () {
+gulp.task("copy-base", function () {
   return gulp.src([
     "source/*.html",
     "source/fonts/**/*.{woff,woff2}"
@@ -81,5 +81,5 @@ gulp.task("clean", function () {
 });
 
 gulp.task("build", function (done) {
-  run("clean", "style", "images", "webp", "compress", "copy", done);
+  run("clean", "style", "images", "webp", "compress-js", "copy-base", done);
 });
