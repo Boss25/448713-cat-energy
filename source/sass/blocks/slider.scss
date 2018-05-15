@@ -83,7 +83,7 @@
     @media (min-width: 1300px) {
       width: 690px;
       height: 517px;
-      margin-left: calc(-690px * 0.53);
+      margin-left: calc(-690px * 0.53 + 1px);
     }
   }
 }

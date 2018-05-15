@@ -199,7 +199,8 @@
   display: block;
 
   @media (min-width: 1300px) {
-    margin-left: -40px;
+    margin-top: 1px;
+    margin-left: -38px;
   }
 }
 
@@ -212,7 +213,7 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    padding-top: 39px;
+    padding-top: 38px;
     margin-bottom: 33px;
   }
 }
@@ -262,7 +263,7 @@
 }
 
 .card__value {
-  text-align: right;
+  text-align: center;
 }
 
 .card__promo {
