@@ -131,6 +131,7 @@
   box-sizing: border-box;
   text-align: right;
   text-transform: uppercase;
+  cursor: pointer;
 
   @media (max-width: 767px) {
     &::before {
@@ -213,9 +214,11 @@
 
 .slider__handler {
   display: none;
+  cursor: pointer;
 
   @media (min-width: 768px) {
     position: absolute;
+    left: 47%;
     top: -7px;
     display: block;
     width: 32px;

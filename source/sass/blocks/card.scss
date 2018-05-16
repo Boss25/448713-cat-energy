@@ -112,13 +112,15 @@
 
     @media (min-width: 1300px) {
       justify-content: space-between;
-      align-items: center;
-      align-content: center;
       min-height: 73px;
-      padding: 0;
+      padding-right: 0;
+      padding-left: 0;
+      padding-top: 14px;
+      padding-bottom: 16px;
       border-color: #cdcdcd;
       border-right: none;
       border-left: none;
+      vertical-align: baseline;
     }
   }
 
@@ -134,6 +136,7 @@
     }
 
     @media (min-width: 1300px) {
+      align-items: center;
       width: 612px;
       padding-top: 0;
       margin-bottom: 0;
@@ -218,7 +221,13 @@
   }
 }
 
-.card__name {
+.card__link {
+  display: block;
+  text-decoration: none;
+}
+
+.card__name,
+.card__name a {
   font-family: $family-primary;
   font-size: $mobile-common-uppercase;
   line-height: 20px;
