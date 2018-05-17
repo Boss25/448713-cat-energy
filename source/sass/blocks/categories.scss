@@ -3,6 +3,7 @@
 
   @media (min-width: 1300px) {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
   }
 }

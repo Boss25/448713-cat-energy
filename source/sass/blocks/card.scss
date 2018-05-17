@@ -17,6 +17,7 @@
   }
 
   @media (min-width: 768px) {
+    min-height: 513px;
     padding-left: 38px;
     padding-right: 38px;
     padding-bottom: 40px;
@@ -47,8 +48,10 @@
 
     @media (min-width: 768px) {
       background: transparent;
+      min-height: auto;
       height: 432px;
-      margin-top: 81px;
+      flex-shrink: 1;
+
       padding-bottom: 39px;
       border: 1px solid #e6e6e6;
       align-self: flex-end;
@@ -204,7 +207,6 @@
 
   @media (min-width: 1300px) {
     margin-top: 1px;
-    margin-left: -38px;
   }
 }
 
@@ -219,6 +221,15 @@
     width: 100%;
     padding-top: 38px;
     margin-bottom: 33px;
+  }
+}
+
+.card > .card__link {
+  @media (min-width: 768px) {
+    position: absolute;
+    left: calc(50%);
+    transform: translateX(-50%);
+    bottom: 304px;
   }
 }
 

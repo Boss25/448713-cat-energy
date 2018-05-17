@@ -1,5 +1,3 @@
-"use strict"
-
 var googleMap = document.querySelector('.contacts__google-map');
 var mapLink = document.querySelector('.contacts__map');
 var burger =  document.querySelector('.main-nav__burger');
