@@ -16,6 +16,7 @@
 
     &--bkgnd {
       margin-bottom: 80px;
+      overflow-x: hidden;
 
       &::before {
         content: "";
@@ -26,7 +27,7 @@
         width: 880px;
         height: 698px;
         background-image: url("../img/index-can-desktop@1x.png"),
-          url("../img/index-background-desktop@1x.jpg");
+        url("../img/index-background-desktop@1x.jpg");
         background-repeat: no-repeat;
         background-position: left 143px, 160px 0;
 

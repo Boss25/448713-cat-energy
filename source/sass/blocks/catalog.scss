@@ -41,6 +41,10 @@
   }
 
   &--grid .catalog__item {
+    @media (min-width: 768px) {
+      min-height: 513px;
+    }
+
     @media (min-width: 768px) and (max-width: 1299px) {
       margin-bottom: 58px;
       width: 45.7%;
@@ -80,6 +84,7 @@
   padding-top: 186px;
   text-align: center;
   background-image: url("../img/gift-photo-mobile@1x.jpg");
+  background-color: #68b738;
   background-position: top center;
   background-repeat: no-repeat;
 

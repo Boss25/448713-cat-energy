@@ -35,6 +35,16 @@
     flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: 0;
+
+
+  }
+
+  @media (min-width: 1300px) {
+    justify-content: flex-start;
+
+    :not(:nth-child(4n)) {
+      margin-right: calc((100% - 245px * 4) / 3);
+    }
   }
 }
 

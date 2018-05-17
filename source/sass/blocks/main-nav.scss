@@ -104,6 +104,7 @@
   @media (min-width: 768px) {
     width: 62%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 0;
     padding-top: 9px;
@@ -111,8 +112,7 @@
   }
 
   @media (min-width: 1300px) {
-    width: auto;
-    min-width: 478px;
+    width: 478px;
   }
 
   &--bkgnd a {

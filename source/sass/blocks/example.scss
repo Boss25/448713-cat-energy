@@ -43,6 +43,7 @@
     margin-right: 49px;
     padding-top: 57px;
     padding-bottom: 73px;
+    box-sizing: content-box;
     padding-left: calc(50% - 610px);
   }
 }
@@ -84,6 +85,7 @@
   @media (min-width: 1300px) {
     margin-top: 0;
     margin-bottom: 68px;
+    width: 435px;
   }
 }
 
