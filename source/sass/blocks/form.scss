@@ -220,23 +220,23 @@
   @media (min-width: 768px) {
     font-size: $tablet-common-uppercase;
     line-height: 20px;
-    padding-top: 16px;
+    padding-top: 15px;
     padding-left: 18px;
-    padding-bottom: 14px;
+    padding-bottom: 15px;
 
     &--error {
-      padding-top: 15px;
+      padding-top: 14px;
       padding-left: 17px;
-      padding-bottom: 13px;
+      padding-bottom: 14px;
       border-color: #ff8282;
       border-width: 2px;
     }
 
     &:active,
     &:focus {
-      padding-top: 15px;
+      padding-top: 14px;
       padding-left: 17px;
-      padding-bottom: 13px;
+      padding-bottom: 14px;
     }
   }
 }
@@ -244,6 +244,11 @@
 .form__input {
   flex-grow: 1;
   min-width: 140px;
+  height: 45px;
+
+  @media (min-width: 768px) {
+    min-height: 52px;
+  }
 }
 
 .form__input:active + .form__icon-mail,
@@ -272,6 +277,62 @@
 
   @media (min-width: 1300px) {
     max-width: none;
+  }
+}
+
+.form__text::-webkit-input-placeholder,
+.form__input::-webkit-input-placeholder {
+  font-family: $family-primary;
+  font-size: $mobile-common-uppercase;
+  line-height: 18px;
+  font-weight: 400;
+  color: $text-color;
+
+  @media (min-width: 768px) {
+    font-size: $tablet-common-uppercase;
+    line-height: 20px;
+  }
+}
+
+.form__input:-moz-placeholder,
+.form__text:-moz-placeholder {
+  font-family: $family-primary;
+  font-size: $mobile-common-uppercase;
+  line-height: 18px;
+  font-weight: 400;
+  color: $text-color;
+
+  @media (min-width: 768px) {
+    font-size: $tablet-common-uppercase;
+    line-height: 20px;
+  }
+}
+
+.form__text::-moz-placeholder,
+.form__input::-moz-placeholder {
+  font-family: $family-primary;
+  font-size: $mobile-common-uppercase;
+  line-height: 18px;
+  font-weight: 400;
+  color: $text-color;
+
+  @media (min-width: 768px) {
+    font-size: $tablet-common-uppercase;
+    line-height: 20px;
+  }
+}
+
+.form__input:-ms-input-placeholder,
+.form__text:-ms-input-placeholder {
+  font-family: $family-primary;
+  font-size: $mobile-common-uppercase;
+  line-height: 18px;
+  font-weight: 400;
+  color: $text-color;
+
+  @media (min-width: 768px) {
+    font-size: $tablet-common-uppercase;
+    line-height: 20px;
   }
 }
 
@@ -318,6 +379,7 @@
   padding-top: 6px;
   padding-bottom: 6px;
   padding-left: 45px;
+  cursor: pointer;
 
   &::before {
     content: "";

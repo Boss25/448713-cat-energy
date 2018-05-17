@@ -8,24 +8,33 @@
   }
 
   @media (min-width: 1300px) {
+    position: relative;
+    z-index: 10;
     min-width: 1300px;
-    max-width: 1440px;
+    max-width: none;
     padding: 0;
-    background-image: url("../img/index-can-desktop@1x.png"),
-      url("../img/index-background-desktop@1x.jpg");
-    background-repeat: no-repeat;
-    background-position: calc(50% + 116px) calc(50% + 3px), top right;
 
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/index-can-desktop@2x.png"),
-        url("../img/index-background-desktop@2x.jpg");
-      background-size: 552px auto, 720px auto;
-    }
-  }
+    &--bkgnd {
+      margin-bottom: 80px;
 
-  &--no-bkgnd {
-    @media (min-width: 1300px) {
-      background: none;
+      &::before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        left: calc(50% - 160px);
+        display: block;
+        width: 880px;
+        height: 698px;
+        background-image: url("../img/index-can-desktop@1x.png"),
+          url("../img/index-background-desktop@1x.jpg");
+        background-repeat: no-repeat;
+        background-position: left 143px, 160px 0;
+
+        @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+          background-image: url("../img/index-can-desktop@2x.png"), url("../img/index-background-desktop@2x.jpg");
+          background-size: 552px auto, 720px auto;
+        }
+      }
     }
   }
 }
@@ -54,7 +63,7 @@
   }
 
   @media (min-width: 1300px) {
-    min-height: 609px;
+    min-height: 529px;
     max-width: 1060px;
     margin: 0 auto;
     padding-top: 57px;

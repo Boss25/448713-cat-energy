@@ -112,13 +112,15 @@
 
     @media (min-width: 1300px) {
       justify-content: space-between;
-      align-items: center;
-      align-content: center;
       min-height: 73px;
-      padding: 0;
+      padding-right: 0;
+      padding-left: 0;
+      padding-top: 14px;
+      padding-bottom: 16px;
       border-color: #cdcdcd;
       border-right: none;
       border-left: none;
+      vertical-align: baseline;
     }
   }
 
@@ -128,12 +130,13 @@
     padding-top: 11px;
 
     @media (min-width: 768px) {
-      align-items: flex-end;
-      margin-bottom: 24px;
+      align-items: flex-start;
+      margin-bottom: 22px;
       padding-top: 27px;
     }
 
     @media (min-width: 1300px) {
+      align-items: center;
       width: 612px;
       padding-top: 0;
       margin-bottom: 0;
@@ -153,6 +156,7 @@
   &--additional .card__attributes {
     @media (min-width: 768px) {
       width: auto;
+      margin-top: 2px;
       flex-shrink: 0;
     }
   }
@@ -199,7 +203,8 @@
   display: block;
 
   @media (min-width: 1300px) {
-    margin-left: -40px;
+    margin-top: 1px;
+    margin-left: -38px;
   }
 }
 
@@ -212,29 +217,37 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    padding-top: 39px;
+    padding-top: 38px;
     margin-bottom: 33px;
   }
 }
 
-.card__name {
+.card__link {
   font-family: $family-primary;
   font-size: $mobile-common-uppercase;
   line-height: 20px;
   font-weight: 400;
   color: $title-color;
   text-transform: uppercase;
+  display: block;
+  text-decoration: none;
+
+  @media (min-width: 768px) {
+    font-size: $tablet-common-uppercase;
+    line-height: 20px;
+    text-align: center;
+  }
+}
+
+.card__name {
   width: 80px;
   margin-top: 0;
   margin-bottom: 13px;
 
   @media (min-width: 768px) {
-    font-size: $tablet-common-uppercase;
-    line-height: 20px;
     width: 140px;
     margin: 0 auto;
-    margin-bottom: 17px;
-    text-align: center;
+    margin-bottom: 18px;
   }
 }
 
