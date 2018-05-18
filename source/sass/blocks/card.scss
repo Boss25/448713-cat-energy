@@ -34,19 +34,6 @@
   &--more {
     position: relative;
 
-    &::before {
-      content: "";
-      position: absolute;
-      top: 26px;
-      left: 50%;
-      display: block;
-      width: 30px;
-      height: 30px;
-      transform: translateX(-50%);
-      background-image: url("../img/icon-plus.svg");
-      background-repeat: no-repeat;
-    }
-
     @media (min-width: 768px) {
       background: transparent;
       min-height: auto;
@@ -56,13 +43,6 @@
       padding-bottom: 39px;
       border: 1px solid #e6e6e6;
       align-self: flex-end;
-
-      &::before {
-        top: 55px;
-        width: 60px;
-        height: 60px;
-        opacity: 0.2;
-      }
     }
   }
 
@@ -201,6 +181,24 @@
       margin-right: 0;
       margin-left: 0;
     }
+  }
+}
+
+.card--more .card__icon {
+  position: absolute;
+  top: 26px;
+  left: 50%;
+  display: block;
+  width: 30px;
+  height: 30px;
+  transform: translateX(-50%);
+  fill: #d3d3d3;
+
+  @media (min-width: 768px) {
+    top: 55px;
+    width: 60px;
+    height: 60px;
+    opacity: 0.2;
   }
 }
 
