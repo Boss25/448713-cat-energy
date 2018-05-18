@@ -8,8 +8,8 @@ burger.addEventListener('click', function (evt) {
   menu.classList.toggle("main-nav__list--show");
 });
 
-googleMap.classList.toggle("visually-hidden");
-mapLink.classList.toggle("visually-hidden");
+googleMap.classList.toggle('visually-hidden');
+mapLink.classList.toggle('visually-hidden');
 
 mapLink.addEventListener('click', function (evt) {
   evt.preventDefault();
@@ -29,7 +29,8 @@ function initMap() {
   });
 }
 
-document.addEventListener("DOMContentLoaded", function() {
-  burger.classList.toggle("main-nav__burger--closed");
-  menu.classList.toggle("main-nav__list--show");
+document.addEventListener('DOMContentLoaded', function() {
+  burger.classList.toggle('hide');
+  burger.classList.toggle('main-nav__burger--closed');
+  menu.classList.toggle('main-nav__list--show');
 });
