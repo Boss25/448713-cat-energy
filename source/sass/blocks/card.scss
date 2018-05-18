@@ -53,17 +53,23 @@
     text-align: center;
 
     @media (min-width: 768px) {
-      width: 140px;
       margin-bottom: 24px;
-      padding-top: 79px;
-      padding-right: 30px;
-      padding-left: 30px;
-      text-align: center;
+      padding-top: 0;
+
+      flex-shrink: 0;
     }
 
     @media (min-width: 1300px) {
       padding-right: 0;
       padding-left: 0;
+    }
+  }
+
+  &--more .card__link {
+    @media (min-width: 768px) {
+      width: 140px;
+      margin: 0 auto;
+      text-align: center;
     }
   }
 
