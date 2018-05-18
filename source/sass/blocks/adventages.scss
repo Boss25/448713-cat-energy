@@ -36,6 +36,14 @@
     justify-content: space-between;
     margin-bottom: 0;
   }
+
+  @media (min-width: 1300px) {
+    justify-content: flex-start;
+
+    :not(:nth-child(4n)) {
+      margin-right: 80px;
+    }
+  }
 }
 
 .advantages__item {

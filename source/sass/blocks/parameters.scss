@@ -6,6 +6,10 @@
   @media (min-width: 768px) {
     justify-content: flex-start;
   }
+
+  @media (min-width: 1300px) {
+    width: 570px;
+  }
 }
 
 .parameters__group {
@@ -13,7 +17,7 @@
   text-align: center;
   margin-bottom: 16px;
 
-  &:not(:first-child) {
+  &:nth-child(even) {
     margin-left: 34px;
   }
 
@@ -33,7 +37,7 @@
   @media (min-width: 768px) {
     margin-bottom: 0;
 
-    &:not(:first-child) {
+    &:nth-child(even) {
       margin-left: 44px;
     }
 
