@@ -212,6 +212,10 @@
   }
 }
 
+.slider__radio:focus + .slider__border {
+  opacity: 0.8;
+}
+
 .slider__handler {
   display: none;
   cursor: pointer;

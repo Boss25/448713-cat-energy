@@ -41,9 +41,6 @@
   }
 
   &--grid .catalog__item {
-    @media (min-width: 768px) {
-      min-height: 513px;
-    }
 
     @media (min-width: 768px) and (max-width: 1299px) {
       margin-bottom: 58px;
@@ -58,7 +55,7 @@
     @media (min-width: 1300px) {
       width: 245px;
       margin-right: 80px;
-      margin-bottom: 61px;
+      margin-bottom: 60px;
 
       &:nth-child(4n) {
         margin-right: 0;

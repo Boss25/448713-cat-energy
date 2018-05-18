@@ -246,6 +246,10 @@
   min-width: 140px;
   height: 45px;
 
+  :focus {
+    outline: none;
+  }
+
   @media (min-width: 768px) {
     min-height: 52px;
   }

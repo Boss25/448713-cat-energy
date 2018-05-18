@@ -20,8 +20,10 @@
     padding-left: 38px;
     padding-right: 38px;
     padding-bottom: 40px;
+    padding-top: 126px;
+    margin-top: 82px;
     box-sizing: border-box;
-    background: linear-gradient(180deg, #ffffff 82px, #f2f2f2 82px, #f2f2f2 100%);
+    background-color: #f2f2f2;
     border: none;
   }
 
@@ -104,6 +106,7 @@
       padding-left: 37px;
       padding-right: 36px;
       padding-bottom: 27px;
+      padding-top: 0;
       border: 1px solid #e6e6e6;
       background: none;
 
@@ -228,9 +231,14 @@
     position: absolute;
     left: calc(50%);
     transform: translateX(-50%);
-    bottom: 304px;
+    top: -46px;
+
+    &--big {
+      top: -82px;
+    }
   }
 }
+
 
 .card__link {
   font-family: $family-primary;
