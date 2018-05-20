@@ -83,12 +83,11 @@ gulp.task('serve', ['style'], function() {
     cors: true,
     ui: false
   });
-   gulp.watch('source/sass/**/*.{scss,sass}', ['style']);
+  gulp.watch('source/sass/**/*.{scss,sass}', ['style']);
   gulp.watch('source/*.html', ['html']).on('change', server.reload);
   gulp.watch('source/img/**/*.{png,jpg,svg}', ['images']);
   gulp.watch('source/js/**/*.js', ['compress-js']);
 });
-
 
 gulp.task('copy-base', function () {
   return gulp.src([
