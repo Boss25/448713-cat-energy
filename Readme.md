@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
-* Студент: [Александр Дружининский](https://up.htmlacademy.ru/adaptive/14/user/448713).
-* Наставник: `Неизвестно`.
+* Студент: [Александр Паярели](https://htmlacademy.ru/profile/id416993).
+* Наставник: [Boss25](https://github.com/Boss25/448713-cat-energy).
 
 ---
 
